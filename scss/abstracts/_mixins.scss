@@ -1,5 +1,18 @@
 @use "../abstracts/variables" as *;
 
+// TYPOGRAPHY MIXINS
+
+@mixin regularCenter {
+    text-align: center;
+    font-weight: 400;
+}
+
+@mixin semiBoldCenter {
+    text-align: center;
+    font-weight: 600;
+}
+
+
 // BUTTON MIXINS
 
 // General button mixin
@@ -60,6 +73,13 @@
     flex-direction: $flexDirection;
 }
 
+@mixin flex ($justifyContent, $flexDirection) {
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: center;
+    flex-direction: $flexDirection;
+}
+
 @mixin gridColumn01($gapAmount) {
     display: grid;
     grid-template-columns: 1fr;
@@ -88,18 +108,18 @@
     place-content: center;
 }
 
+@mixin gridColumn08($gapAmount) {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: $gapAmount;
+    place-content: center;
+}
+
 @mixin gridColumn12($gapAmount) {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: $gapAmount;
     place-content: center;
-}
-
-
-
-
-.test {
-    
 }
 
 

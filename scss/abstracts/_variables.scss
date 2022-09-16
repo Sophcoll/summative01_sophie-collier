@@ -18,3 +18,10 @@ $grey05: #C0C0C0;
 $grey06: #DEDCDC;
 $white: #FDFDFD;
 
+.white {
+    color: $white;
+}
+
+.white-outline {
+    outline: 0.2rem solid $white;
+}

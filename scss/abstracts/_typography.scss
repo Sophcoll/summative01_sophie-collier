@@ -13,6 +13,7 @@
 h1 {
     font-size: 6.1rem;
     line-height: 7.2rem;
+    margin: 0;
 }
 
 h2 {
@@ -43,9 +44,24 @@ h6 {
 // PARAGRAPH AND SUBTITLES
 
 
-p {
+p,
+a {
     font-size: 1.6rem;
     line-height: 2rem;
+}
+
+a {
+    color: $white;
+    text-transform: uppercase;
+}
+
+figcaption {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: 400;
+    text-align: center;
 }
 
 .subtitle01 {
@@ -61,10 +77,11 @@ p {
 
 // FONT WEIGHT UTILITY CLASSES
 
-.semibold-font {
-    font-weight: 600;
+
+.upper-case {
+    text-transform: uppercase;
 }
 
-.regular-font {
-    font-weight: 400;
+.caps {
+    text-transform: capitalize;
 }
