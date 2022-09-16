@@ -1,0 +1,71 @@
+@use "../abstracts/variables" as *;
+
+// BUTTON MIXINS
+
+// General button mixin
+
+@mixin btn {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+}
+
+// Button size mixin
+
+@mixin btn-size01 {
+    font-size: 2.5rem;
+    padding: 1.6rem 1.8rem;
+}
+
+@mixin btn-size02 {
+    font-size: 2rem;
+    padding: 1.4rem 1.7rem;
+}
+
+@mixin btn-size03 {
+    font-size: 1.6rem;
+    padding: 1.2rem 1.6rem;
+}
+
+@mixin btn-size04 {
+    font-size: 1.4rem;
+    padding: 1.1rem 1.5rem;
+}
+
+@mixin btn-size05 {
+    font-size: 1.2rem;
+    padding: 1rem 1.4rem;
+}
+
+// Button color mixin
+
+@mixin redBtn {
+    color: $white;
+    background-color: $red01;
+}
+
+@mixin whiteBtn {
+    color: $red01;
+    background-color: $white;
+    outline: 0.2rem solid $red01;
+}
+
+// LAYOUT MIXINS
+
+@mixin flexCenter($flexDirection) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $flexDirection;
+}
+
+@mixin gridColumn04 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    place-content: center;
+    text-align: center
+}
+
+

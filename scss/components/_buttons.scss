@@ -1,0 +1,109 @@
+@use "../abstracts/" as *;
+
+// RED BUTTONS
+
+.red-btn01 {
+    @include btn;
+    @include redBtn;
+    @include btn-size01;
+
+    &:hover {
+        @include whiteBtn
+    }
+}
+
+.red-btn02 {
+    @include btn;
+    @include redBtn;
+    @include btn-size02;
+
+    &:hover {
+        @include whiteBtn
+    }
+}
+
+.red-btn03 {
+    @include btn;
+    @include redBtn;
+    @include btn-size03;
+
+    &:hover {
+        @include whiteBtn
+    }
+}
+
+.red-btn04 {
+    @include btn;
+    @include redBtn;
+    @include btn-size04;
+   
+    &:hover {
+        @include whiteBtn
+    }
+}
+
+.red-btn05 {
+    @include btn;
+    @include redBtn;
+    @include btn-size05;
+
+    &:hover {
+        @include whiteBtn
+    }
+}
+
+
+// WHITE BUTTONS
+
+.white-btn01 {
+    @include btn;
+    @include whiteBtn;
+    @include btn-size01;
+
+    &:hover {
+        @include redBtn
+    }
+}
+
+.white-btn02 {
+    @include btn;
+    @include whiteBtn;
+    @include btn-size02;
+
+    &:hover {
+        @include redBtn
+    }
+}
+
+.white-btn03 {
+    @include btn;
+    @include whiteBtn;
+    @include btn-size03;
+
+    &:hover {
+        @include redBtn
+    }
+}
+
+.white-btn04 {
+    @include btn;
+    @include whiteBtn;
+    @include btn-size04;
+
+    &:hover {
+        @include redBtn
+    }
+}
+
+.white-btn05 {
+    @include btn;
+    @include whiteBtn;
+    @include btn-size05;
+
+    &:hover {
+        @include redBtn
+    }
+}
+
+
+
