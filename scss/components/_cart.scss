@@ -1,0 +1,85 @@
+@use "../global/" as *;
+@use "../abstracts/" as *;
+
+
+.cart-wrapper {
+    border: solid red 3px;
+    width: 35vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    .cart {
+        background-color: aquamarine;
+        @include flexCenter(column);
+
+        .cart-header {
+            background-color: antiquewhite;
+            height: 10vh;
+            @include flexCenter(column);
+            
+
+        }
+
+        .cart-body {
+            flex: 1;
+            @include flexCenter(column);
+
+            .cart-list {
+                background-color: grey;
+                @include flexCenter(column);
+                gap: 2rem;
+
+                .cart-list-item {
+                    outline: red solid 3px;
+                    flex: 1;
+                    @include gridColumn05(0);
+
+                    p,
+                    i {
+                        align-self: center;
+                        justify-self: center;
+                    }
+
+                    p:first-of-type::before {
+                        content: url("../img/minus-icon.svg");
+                        padding-right: 1rem;
+                    }
+
+                    p:first-of-type::after {
+                        content: url("../img/plus-icon.svg");
+                        padding-left: 1rem;
+                    }
+
+                    p:nth-of-type(2) {
+                        grid-column: span 2;
+                        justify-self: start;
+                        background-color: pink;
+                    }
+
+                }
+            }
+
+            .cart-order-total {
+
+                @include gridColumn04(0);
+
+                p:first-of-type {
+                    grid-column-start: 2;
+                }
+                p:last-of-type {
+                    grid-column-start: 3;
+                }
+                
+            }
+
+        }
+
+        .cart-footer {
+            flex: 1;
+        }
+
+    }
+
+}

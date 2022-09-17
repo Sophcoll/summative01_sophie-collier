@@ -64,15 +64,37 @@ figcaption {
     text-align: center;
 }
 
-.subtitle01 {
+.regular-subtitle01 {
     font-size: 1.4rem;
     line-height: 2rem;
+    font-weight: 400;
 }
 
-.subtitle02 {
+.semibold-subtitle01 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+.regular-subtitle02 {
     font-size: 1.2rem;
     line-height: 1.6rem;
+    font-weight: 400;
 }
+
+.semibold-subtitle02 {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+}
+
+
+// ICONS
+
+i {
+    font-size: 1.2rem;
+}
+
 
 
 // FONT WEIGHT UTILITY CLASSES

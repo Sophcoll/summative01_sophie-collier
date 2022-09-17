@@ -13,6 +13,10 @@ html {
     min-height: 100%;
 }
 
+body {
+    position: relative;
+}
+
 li {
     list-style: none;
 }
@@ -20,8 +24,6 @@ li {
 a {
     text-decoration: none;
 }
-
-// MAYBE A MIXIN BELOW??
 
 img {
     width: 100%;

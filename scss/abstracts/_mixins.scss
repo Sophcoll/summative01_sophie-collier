@@ -108,6 +108,13 @@
     place-content: center;
 }
 
+@mixin gridColumn05($gapAmount) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: $gapAmount;
+    place-content: center;
+}
+
 @mixin gridColumn08($gapAmount) {
     display: grid;
     grid-template-columns: repeat(8, 1fr);

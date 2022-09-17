@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/resets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.css">
     <title>Main Menu</title>
 </head>
@@ -88,7 +91,8 @@
                             <li class="main-menu-list-item">
                                 <a href="#">
                                     <figure>
-                                        <img class="image-smaller01" src="./img/edamame-outline.svg" alt="outline of an edamame bean">
+                                        <img class="image-smaller01" src="./img/edamame-outline.svg"
+                                            alt="outline of an edamame bean">
                                     </figure>
                                     <h6>sides</h6>
                                 </a>
@@ -97,7 +101,8 @@
                             <li class="main-menu-list-item">
                                 <a href="#">
                                     <figure>
-                                        <img class="image-smaller01" src="./img/mushroom-outline.svg" alt="outline of mushrooms">
+                                        <img class="image-smaller01" src="./img/mushroom-outline.svg"
+                                            alt="outline of mushrooms">
                                     </figure>
                                     <h6>vegetarian</h6>
                                 </a>
@@ -115,7 +120,8 @@
                             <li class="main-menu-list-item">
                                 <a href="#">
                                     <figure>
-                                        <img class="image-smaller02" src="./img/chefs-specials-outline.svg" alt="outline of a chef's hat">
+                                        <img class="image-smaller02" src="./img/chefs-specials-outline.svg"
+                                            alt="outline of a chef's hat">
                                     </figure>
                                     <h6>specials</h6>
                                 </a>
@@ -133,6 +139,65 @@
             </section>
         </div>
     </main>
+
+    <!-- CART  -->
+
+    <div class="cart-wrapper">
+        <section class="cart">
+            <header class="cart-header">
+                <p>table 3</p>
+                <h5>your order</h5>
+            </header>
+
+            <main class="cart-body">
+                <ul class="cart-list">
+                    <li class="cart-list-item">
+                        <p class="semibold-subtitle01">1</p>
+                        <p class="regular-subtitle01">Edamame steamed green beans (V) (GF) ($6.50)</p>
+                        <p class="semibold-subtitle01">$6.50</p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <li class="cart-list-item">
+                        <p class="semibold-subtitle01">1</p>
+                        <p class="regular-subtitle01">Takoyaki octopus balls ($8.50)</p>
+                        <p class="semibold-subtitle01">$8.50</p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <li class="cart-list-item">
+                        <p class="semibold-subtitle01">2</p>
+                        <p class="regular-subtitle01">Mushrooms stuffed with chicken mince (GF) ($8.00)</p>
+                        <p class="semibold-subtitle01">$16.00</p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <li class="cart-list-item">
+                        <p class="semibold-subtitle01">2</p>
+                        <p class="regular-subtitle01">Chicken Donburi (GF) ($14.00)</p>
+                        <p class="semibold-subtitle01">$28.00</p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <li class="cart-list-item">
+                        <p class="semibold-subtitle01">2</p>
+                        <p class="regular-subtitle01">Asahi Super Dry Draft on Tap 500ml 5% ($13.00)</p>
+                        <p class="semibold-subtitle01">$13.00</p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                </ul>
+
+                <div class="cart-order-total">
+                        <p>order total</p>
+                        <p>$85.00</p>
+                </div>
+
+            </main>
+
+            <footer class="cart-footer">
+                <div class="place-order-btn">
+                    <a class="red-btn02" href="">place order</a>
+                </div>
+            </footer>
+
+        </section>
+    </div>
 
 
 </body>
