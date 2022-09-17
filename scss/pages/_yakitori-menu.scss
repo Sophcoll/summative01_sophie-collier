@@ -1,0 +1,75 @@
+@use "../global/" as *;
+@use "../abstracts/" as *;
+@use "../components/" as *;
+
+// INTRO SECTION
+
+.yakitori-intro-wrapper {
+  width: 65vw;
+  @include flexCenter(column);
+
+  .yakitori-intro {
+    @include flexCenter(column);
+    gap: 5rem;
+    padding: 7rem 5rem 7rem 7rem;
+    border-bottom: $red01 solid 0.1rem;
+
+    .yakitori-intro-header {
+      h3 {
+        @include regularCenter;
+      }
+    }
+
+    .yakitori-intro-body {
+      @include flexCenter(column);
+      gap: 1.6rem;
+
+      p {
+        @include regularCenter;
+      }
+
+      p:last-of-type {
+        font-weight: 600;
+      }
+    }
+
+    .yakitori-intro-footer {
+      flex: 1;
+      @include flexCenter(column);
+
+      .yakitori-menu-list {
+        flex: 1;
+        @include flexCenter(row);
+      }
+    }
+  }
+}
+
+// CHICKEN YAKITORI SECTION
+
+.chicken-yakitori-wrapper {
+  width: 65vw;
+  padding: 7rem 5rem 7rem 7rem;
+  border-bottom: $red01 solid 0.1rem;
+
+
+  .chicken-yakitori-section {
+    @include flexCenter(column);
+    gap: 5rem;
+    
+    .chicken-yakitori-header {
+      @include flexCenter(column);
+
+      h4 {
+        @include regularCenter;
+      }
+    }
+    .chicken-yakitori-body {
+      @include gridColumn02(4rem);
+    }
+
+    .chicken-yakitori-footer {
+      @include flexCenter(column);
+    }
+  }
+}

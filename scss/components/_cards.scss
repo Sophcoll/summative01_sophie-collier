@@ -1,0 +1,39 @@
+@use "../global/" as *;
+@use "../abstracts/" as *;
+
+// MENU ITEM CARD
+
+.menu-card {
+    @include gridColumn02(0);
+    outline: $red01 solid 0.2rem;
+  
+    .menu-card-img {
+      @include flexCenter(column);
+    }
+  
+    .menu-card-text-wrapper {
+      @include flexCenter(column);
+      gap: 2rem;
+      padding: 2.5rem;
+      background-color: pink;
+  
+      header {
+        background-color: purple;
+        margin-left: auto;
+      }
+  
+      main {
+        flex: 1;
+        @include flexCenter(column);
+  
+        p {
+          @include regularCenter;
+  
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  

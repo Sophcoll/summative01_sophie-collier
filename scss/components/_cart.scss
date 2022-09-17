@@ -3,7 +3,8 @@
 
 
 .cart-wrapper {
-    border: solid red 3px;
+    outline: $red01 solid 0.3rem;
+    background-color: $white;
     width: 35vw;
     height: 100vh;
     position: fixed;
@@ -11,29 +12,33 @@
     right: 0;
 
     .cart {
-        background-color: aquamarine;
+        height: 100vh;
         @include flexCenter(column);
 
         .cart-header {
-            background-color: antiquewhite;
-            height: 10vh;
             @include flexCenter(column);
+            gap: 0.5rem;
+            height: 10vh;
+            width: 35vw;
+            border-bottom: $red01 solid 0.3rem;
             
+            h5,
+            p {
+                @include semiBoldCenter;
+            }
 
         }
 
         .cart-body {
-            flex: 1;
             @include flexCenter(column);
 
             .cart-list {
-                background-color: grey;
                 @include flexCenter(column);
-                gap: 2rem;
 
                 .cart-list-item {
-                    outline: red solid 3px;
                     flex: 1;
+                    padding: 2rem;
+                    border-bottom: $red01 solid 0.1rem;
                     @include gridColumn05(0);
 
                     p,
@@ -55,29 +60,42 @@
                     p:nth-of-type(2) {
                         grid-column: span 2;
                         justify-self: start;
-                        background-color: pink;
                     }
 
                 }
+
+                .cart-list-item:nth-of-type(odd) {
+                    background-color: $red08;
+                }
+
             }
 
             .cart-order-total {
+                flex: 1;
+                padding: 2rem;
+                width: 35vw;
+                @include gridColumn05(0);
 
-                @include gridColumn04(0);
+                p{
+                    font-weight: 600;
+                }
 
                 p:first-of-type {
                     grid-column-start: 2;
+                    grid-column-end: 4;
                 }
                 p:last-of-type {
-                    grid-column-start: 3;
+                    grid-column-start: 4;
+                    justify-self: center;
                 }
                 
             }
-
         }
 
         .cart-footer {
             flex: 1;
+            padding-bottom: 5rem;
+            @include flex(flex-end, column);
         }
 
     }
