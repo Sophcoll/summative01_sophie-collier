@@ -2,3 +2,43 @@
 @use "../abstracts/" as *;
 @use "../components/" as *;
 
+
+.review-order-wrapper {
+    background-color: aqua;
+
+    .review-order {
+        background-color: bisque;
+        @include flexCenter(column);
+
+        .review-order-header {
+            background-color: cadetblue;
+            @include flexCenter(column);
+
+            h3 {
+                @include regularCenter;
+            }
+
+        }
+
+    }
+}
+
+.order-review-body {
+    background-color: aqua;
+    @include flexCenter(column);
+
+    .order-summary-wrapper {
+        @include gridColumn02(0);
+        background-color: aquamarine;
+
+        .order-summary-left-col {
+            grid-column: span 1;
+
+        }
+
+        .order-summary-right-col {
+            grid-column: span 1;
+
+        }
+    }
+}
