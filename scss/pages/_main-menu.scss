@@ -2,4 +2,72 @@
 @use "../abstracts/" as *;
 @use "../components/" as *;
 
+.main-menu-wrapper {
+  width: 65vw;
+  height: 90vh;
+  padding-left: 7rem;
+  padding-right: 5rem;
+  @include flexCenter(column);
 
+  .main-menu {
+    flex: 1;
+    @include flexCenter(column);
+
+    .main-menu-header {
+      @include flexCenter(column);
+      flex: 1;
+
+      h3 {
+        @include regularCenter;
+      }
+    }
+
+    .main-menu-body {
+      @include flexCenter(column);
+      flex: 1;
+
+      .main-menu-list {
+        @include gridColumn04(3rem);
+
+        .main-menu-list-item {
+          @include flexCenter(column);
+          outline: $red01 solid 0.3rem;
+
+          a {
+            @include flexCenter(column);
+            padding: 3rem;
+
+            figure {
+              @include flexCenter(column);
+              height: 9rem;
+              padding-bottom: 2rem;
+            }
+
+            h6 {
+              color: $black;
+            }
+          }
+        }
+      }
+    }
+
+    .main-menu-footer {
+      @include flexCenter(column);
+      gap: 2rem;
+      flex: 1;
+
+      p:first-of-type {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.image-smaller01 {
+  height: 90%;
+}
+
+.image-smaller02 {
+    height: 85%;
+  }
+  

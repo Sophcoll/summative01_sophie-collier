@@ -2,16 +2,16 @@
 @use "../abstracts/" as *;
 @use "../components/" as *;
 
-.body-col-12 {
-    @include gridColumn12(0);
+.top-nav-small {
+    width: 65vw;
   
-    .top-nav-small {
+    .top-nav-small-wrapper {
       grid-column: span 8;
       background-color: $red01;
       padding: 2.5rem 5rem 2.5rem 7rem;
       @include flex(flex-start, row);
       gap: 5rem;
-  
+      height: 10vh;
   
       .logo-wrapper {
         .logo {
