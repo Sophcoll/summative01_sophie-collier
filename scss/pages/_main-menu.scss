@@ -2,40 +2,4 @@
 @use "../abstracts/" as *;
 @use "../components/" as *;
 
-.body-col-12 {
-  @include gridColumn12(0);
 
-  .top-nav-small {
-    grid-column: span 8;
-    background-color: $red01;
-    @include flex(flex-start, row);
-
-    .logo-wrapper {
-      .logo {
-        @include flexCenter(column);
-        width: 10rem;
-
-        img {
-          padding-bottom: 0.8rem;
-        }
-      }
-    }
-
-    .top-nav-list-wrapper {
-        flex: 1;
-     
-      .top-nav-list {
-        @include flex(flex-end, row);
-        gap: 3rem;
-
-        li:first-of-type {
-            margin-right: auto;
-
-            &::before {
-            
-            }
-        }
-      }
-    }
-  }
-}

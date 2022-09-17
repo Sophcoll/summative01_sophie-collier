@@ -1,0 +1,62 @@
+@use "../global/" as *;
+@use "../abstracts/" as *;
+@use "../components/" as *;
+
+.body-col-12 {
+    @include gridColumn12(0);
+  
+    .top-nav-small {
+      grid-column: span 8;
+      background-color: $red01;
+      padding: 2.5rem 5rem 2.5rem 7rem;
+      @include flex(flex-start, row);
+      gap: 5rem;
+  
+  
+      .logo-wrapper {
+        .logo {
+          @include flexCenter(column);
+          width: 7rem;
+  
+          img {
+            padding-bottom: 0.8rem;
+          }
+        }
+      }
+  
+      .top-nav-list-wrapper {
+          flex: 1;
+       
+        .top-nav-list {
+          @include flex(flex-end, row);
+          gap: 3rem;
+  
+          li:first-of-type {
+              margin-right: auto;
+  
+              &::before {
+              content: url("../img/back-chevron-outline.svg");
+              padding-right: 0.5rem;
+              }
+          }
+  
+          li:nth-of-type(2) {
+  
+              &::before {
+              content: url("../img/help-outline-white.svg");
+              padding-right: 0.5rem;
+              }
+          }
+  
+  
+          li:last-of-type {
+  
+              &::after {
+              content: url("../img/down-chevron-outline-white.svg");
+              padding-left: 0.5rem;
+              }
+          }
+        }
+      }
+    }
+  }
