@@ -7,18 +7,21 @@
     @include gridColumn02(0);
     outline: $red01 solid 0.2rem;
   
-    .menu-card-img {
+    .menu-card-img-wrapper {
       @include flexCenter(column);
+      
+      figure {
+        height: 100%;
+        width: 100%;
+      }
     }
   
     .menu-card-text-wrapper {
       @include flexCenter(column);
       gap: 2rem;
       padding: 2.5rem;
-      background-color: pink;
   
       header {
-        background-color: purple;
         margin-left: auto;
       }
   
