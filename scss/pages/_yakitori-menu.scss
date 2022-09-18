@@ -39,7 +39,7 @@
 
       .yakitori-menu-list {
         flex: 1;
-        @include flexCenter(row);
+        @include flex(row);
       }
     }
   }

@@ -2,94 +2,90 @@
 @use "../abstracts/" as *;
 @use "../components/" as *;
 
-
 .review-order-wrapper {
-    background-color: aqua;
+  background-color: aqua;
 
-    .review-order {
-        background-color: bisque;
-        height: 90vh;
-        @include flexCenter(column);
+  .review-order {
+    background-color: bisque;
+    height: 90vh;
+    @include flexCenter(column);
 
-        .review-order-header {
-            @include flexCenter(column);
-            flex: 1;
+    .review-order-header {
+      @include flexCenter(column);
+      flex: 1;
 
-            h3 {
-                @include regularCenter;
-            }
-
-        }
-
-        .review-order-body {
-            width: 75vw;
-            @include flexCenter(column);
-            flex: 1;
-        
-            .order-summary-wrapper {
-                @include gridColumn02(0);
-                background-color: $white;
-                outline: $red01 solid 0.2rem;
-        
-                .order-summary-left-col {
-                    grid-column: span 1;
-                    @include flexCenter(column);
-        
-
-                }
-        
-                .order-summary-right-col {
-                    grid-column: span 1;
-                    @include flexCenter(column);
-                    border-left: $red01 solid 0.2rem;
-
-                    .order-summary-header {
-                        width: 100%;
-                        @include flexCenter(column);
-                        gap: 0.8rem;
-                        flex: 1;
-                        border-bottom: $red01 solid 0.2rem;
-                    }
-
-                    .order-summary-body {
-                        background-color: pink;
-                        width: 100%;
-                        @include flexCenter(column);
-                        gap: 1rem;
-                        flex: 1;
-
-                        p {
-                            font-weight: 600;
-                        }
-                    }
-
-                    .order-summary-footer {
-                        background-color: cadetblue;
-                        width: 100%;
-                        @include flexCenter(column);
-                        gap: 2rem;
-                        flex: 1;
-
-                        form {
-
-                        }
-
-                        .order-summary-btn-wrapper {
-                            background-color: chartreuse;
-                            @include flexCenter(row);
-                            gap: 2rem;
-                        }
-                        
-                    }
-        
-                }
-            }
-        }
-
-        .review-order-footer {
-            flex: 1;
-            @include flexCenter(column);
-        }
+      h3 {
+        @include regularCenter;
+      }
     }
-}
 
+    .review-order-body {
+      width: 75vw;
+      @include flexCenter(column);
+      flex: 1;
+
+      .order-summary-wrapper {
+        @include gridColumn02(0);
+        background-color: $white;
+        outline: $red01 solid 0.2rem;
+
+        .order-summary-left-col {
+          grid-column: span 1;
+          @include flexCenter(column);
+        }
+
+        .order-summary-right-col {
+          grid-column: span 1;
+          @include flexCenter(column);
+          border-left: $red01 solid 0.2rem;
+
+          .order-summary-header {
+            width: 100%;
+            @include flexCenter(column);
+            gap: 0.8rem;
+            flex: 1;
+            border-bottom: $red01 solid 0.2rem;
+          }
+
+          .order-summary-body {
+            width: 100%;
+            @include flexCenter(column);
+            gap: 1rem;
+            flex: 1;
+
+            p {
+              font-weight: 600;
+            }
+          }
+
+          .order-summary-footer {
+            background-color: cadetblue;
+            width: 100%;
+            @include flexCenter(column);
+            gap: 2rem;
+            flex: 1;
+
+            form {
+              width: 100%;
+              background-color: aqua;
+
+              input {
+                width: 50rem;
+              }
+            }
+
+            .order-summary-btn-wrapper {
+              @include flexCenter(row);
+              gap: 2rem;
+            }
+          }
+        }
+      }
+    }
+
+    .review-order-footer {
+      flex: 1;
+      @include flexCenter(column);
+    }
+  }
+}

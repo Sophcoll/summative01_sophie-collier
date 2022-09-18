@@ -22,13 +22,16 @@
         width: 100%;
         flex: 1;
         @include gridColumn03(5rem);
-        // @include flex(space-evenly, row);
 
         .payment-method {
             @include flexCenter(column);
             outline: $red01 solid 0.2rem;
             background-color: $white;
             padding: 3rem;
+
+            &:first-of-type {
+                background-color: $red08;
+            }
 
             .payment-method-wrapper {
                 @include flexCenter(column);
@@ -93,7 +96,7 @@
                             font-size: 1.6rem;
                             font-weight: 200;
                             line-height: 2.4rem;
-                            padding: 0.5rem;
+                            padding: 1rem;
                         }
 
                     }
