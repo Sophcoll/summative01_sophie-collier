@@ -34,12 +34,16 @@
     }
 
     .yakitori-intro-footer {
+      width: 100%;
       flex: 1;
       @include flexCenter(column);
+      gap: 2rem;
 
       .yakitori-menu-list {
+        width: 100%;
         flex: 1;
         @include flexCenter(row);
+        gap: 3rem;
       }
     }
   }
