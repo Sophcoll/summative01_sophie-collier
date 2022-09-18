@@ -1,103 +1,96 @@
 @use "../global/" as *;
 @use "../abstracts/" as *;
 
-
 .cart-wrapper {
-    outline: $red01 solid 0.3rem;
-    background-color: $white;
-    width: 35vw;
+  outline: $red01 solid 0.3rem;
+  background-color: $white;
+  width: 35vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  .cart {
     height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
+    @include flexCenter(column);
 
-    .cart {
-        height: 100vh;
-        @include flexCenter(column);
+    .cart-header {
+      @include flexCenter(column);
+      gap: 0.5rem;
+      height: 10vh;
+      width: 35vw;
+      border-bottom: $red01 solid 0.3rem;
 
-        .cart-header {
-            @include flexCenter(column);
-            gap: 0.5rem;
-            height: 10vh;
-            width: 35vw;
-            border-bottom: $red01 solid 0.3rem;
-            
-            h5,
-            p {
-                @include semiBoldCenter;
-            }
-
-        }
-
-        .cart-body {
-            @include flexCenter(column);
-
-            .cart-list {
-                @include flexCenter(column);
-
-                .cart-list-item {
-                    flex: 1;
-                    padding: 2rem;
-                    border-bottom: $red01 solid 0.1rem;
-                    @include gridColumn05(0);
-
-                    p,
-                    i {
-                        align-self: center;
-                        justify-self: center;
-                    }
-
-                    p:first-of-type::before {
-                        content: url("../img/minus-icon.svg");
-                        padding-right: 1rem;
-                    }
-
-                    p:first-of-type::after {
-                        content: url("../img/plus-icon.svg");
-                        padding-left: 1rem;
-                    }
-
-                    p:nth-of-type(2) {
-                        grid-column: span 2;
-                        justify-self: start;
-                    }
-
-                }
-
-                .cart-list-item:nth-of-type(odd) {
-                    background-color: $red08;
-                }
-
-            }
-
-            .cart-order-total {
-                flex: 1;
-                padding: 2rem;
-                width: 35vw;
-                @include gridColumn05(0);
-
-                p{
-                    font-weight: 600;
-                }
-
-                p:first-of-type {
-                    grid-column-start: 2;
-                    grid-column-end: 4;
-                }
-                p:last-of-type {
-                    grid-column-start: 4;
-                    justify-self: center;
-                }
-                
-            }
-        }
-
-        .cart-footer {
-            flex: 1;
-            padding-bottom: 5rem;
-            @include flex(flex-end, column);
-        }
-
+      h5,
+      p {
+        @include semiBoldCenter;
+      }
     }
 
+    .cart-body {
+      @include flexCenter(column);
+
+      .cart-order-total {
+        flex: 1;
+        padding: 2rem;
+        width: 35vw;
+        @include gridColumn05(0);
+
+        p {
+          font-weight: 600;
+        }
+
+        p:first-of-type {
+          grid-column-start: 2;
+          grid-column-end: 4;
+        }
+        p:last-of-type {
+          grid-column-start: 4;
+          justify-self: center;
+        }
+      }
+    }
+
+    .cart-footer {
+      flex: 1;
+      padding-bottom: 5rem;
+      @include flex(flex-end, column);
+    }
+  }
 }
+
+// CART LIST STYLING 
+
+.cart-list {
+    .cart-list-item {
+      flex: 1;
+      padding: 2rem;
+      border-bottom: $red01 solid 0.1rem;
+      @include gridColumn05(0);
+
+      p,
+      i {
+        align-self: center;
+        justify-self: center;
+      }
+
+      p:first-of-type::before {
+        content: url("../img/minus-icon.svg");
+        padding-right: 1rem;
+      }
+
+      p:first-of-type::after {
+        content: url("../img/plus-icon.svg");
+        padding-left: 1rem;
+      }
+
+      p:nth-of-type(2) {
+        grid-column: span 2;
+        justify-self: start;
+      }
+    }
+
+    .cart-list-item:nth-of-type(odd) {
+      background-color: $red08;
+    }
+  }

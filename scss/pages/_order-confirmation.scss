@@ -1,0 +1,62 @@
+@use "../global/" as *;
+@use "../abstracts/" as *;
+@use "../components/" as *;
+
+.order-confirmation-wrapper {
+
+  .order-confirmation {
+    height: 90vh;
+    @include flexCenter(column);
+    gap: 2rem;
+
+    .order-confirmation-header {
+      @include flexCenter(column);
+      gap: 1rem;
+      flex: 1;
+
+      h3 {
+        @include regularCenter;
+      }
+
+      p {
+        font-weight: 600;
+      }
+    }
+
+    .order-confirmation-body {
+      width: 90vw;
+      gap: 7.5rem;
+      @include flexCenter(column);
+      flex: 1;
+
+      .order-confirmation-text {
+        @include flexCenter(column);
+        flex: 1;
+        gap: 2rem;
+
+        p {
+          @include regularCenter;
+        }
+
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .order-confirmation-footer {
+      @include flexCenter(column);
+      gap: 3rem;
+      flex: 1;
+
+      .order-confirmation-btn-wrapper {
+        @include flexCenter(row);
+        gap: 2rem;
+      }
+      p::before {
+        content: url("../img/refresh-outline.svg");
+        padding-right: 0.8rem;
+      }
+    }
+  }
+}

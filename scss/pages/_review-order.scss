@@ -8,11 +8,12 @@
 
     .review-order {
         background-color: bisque;
+        height: 90vh;
         @include flexCenter(column);
 
         .review-order-header {
-            background-color: cadetblue;
             @include flexCenter(column);
+            flex: 1;
 
             h3 {
                 @include regularCenter;
@@ -20,25 +21,75 @@
 
         }
 
+        .review-order-body {
+            width: 75vw;
+            @include flexCenter(column);
+            flex: 1;
+        
+            .order-summary-wrapper {
+                @include gridColumn02(0);
+                background-color: $white;
+                outline: $red01 solid 0.2rem;
+        
+                .order-summary-left-col {
+                    grid-column: span 1;
+                    @include flexCenter(column);
+        
+
+                }
+        
+                .order-summary-right-col {
+                    grid-column: span 1;
+                    @include flexCenter(column);
+                    border-left: $red01 solid 0.2rem;
+
+                    .order-summary-header {
+                        width: 100%;
+                        @include flexCenter(column);
+                        gap: 0.8rem;
+                        flex: 1;
+                        border-bottom: $red01 solid 0.2rem;
+                    }
+
+                    .order-summary-body {
+                        background-color: pink;
+                        width: 100%;
+                        @include flexCenter(column);
+                        gap: 1rem;
+                        flex: 1;
+
+                        p {
+                            font-weight: 600;
+                        }
+                    }
+
+                    .order-summary-footer {
+                        background-color: cadetblue;
+                        width: 100%;
+                        @include flexCenter(column);
+                        gap: 2rem;
+                        flex: 1;
+
+                        form {
+
+                        }
+
+                        .order-summary-btn-wrapper {
+                            background-color: chartreuse;
+                            @include flexCenter(row);
+                            gap: 2rem;
+                        }
+                        
+                    }
+        
+                }
+            }
+        }
+
+        .review-order-footer {
+            flex: 1;
+            @include flexCenter(column);
+        }
     }
 }
 
-.order-review-body {
-    background-color: aqua;
-    @include flexCenter(column);
-
-    .order-summary-wrapper {
-        @include gridColumn02(0);
-        background-color: aquamarine;
-
-        .order-summary-left-col {
-            grid-column: span 1;
-
-        }
-
-        .order-summary-right-col {
-            grid-column: span 1;
-
-        }
-    }
-}

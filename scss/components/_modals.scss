@@ -1,0 +1,37 @@
+@use "../global/" as *;
+@use "../abstracts/" as *;
+
+
+.payment-modal-wrapper {
+    background-color: bisque;
+    @include flexCenter(column);
+    width: 70vw;
+
+    .payment-modal-header {
+        background-color: pink;
+        flex: 1;
+        @include flexCenter(column);
+    }
+
+    .payment-modal-body {
+        background-color: aqua;
+        width: 100%;
+        flex: 1;
+        @include gridColumn03(2rem);
+
+        .payment-method {
+            background-color: purple;
+            align-self: center;
+        }
+
+
+    }
+
+    .payment-modal-footer {
+        background-color: cadetblue;
+        flex: 1;
+
+    }
+
+
+}

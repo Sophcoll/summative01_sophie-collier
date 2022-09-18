@@ -53,15 +53,13 @@
 
     .main-menu-footer {
       @include flexCenter(column);
-      gap: 2rem;
       flex: 1;
-
-      p:first-of-type {
-        font-weight: 600;
-      }
     }
   }
 }
+
+
+// UTILITY CLASSES TO TWEAK IMAGERY
 
 .image-smaller01 {
   height: 90%;
