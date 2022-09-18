@@ -44,54 +44,92 @@
         <div class="payment-modal-wrapper">
 
             <header class="payment-modal-header">
-                <h5>payment method</h5>
+                <h5>Payment method</h5>
             </header>
 
             <main class="payment-modal-body">
                 <div class="payment-method">
-                    <figure>
-                        <img src="./img/creditcard-outline.svg" alt="An outline of a credit card">
-                        <figcaption>pay with card</figcaption>
-                    </figure>
+                    <div class="payment-method-wrapper">
+                        <figure>
+                            <img src="./img/creditcard-outline.svg" alt="An outline of a credit card">
+                        </figure>
+                        <p class="upper-case semibold-subtitle01">pay with card</p>
+                    </div>
                 </div>
                 <div class="payment-method">
-                    <figure>
-                        <img src="./img/cash-outline.svg" alt="An outline of a three bills of cash">
-                        <figcaption>pay with card</figcaption>
-                    </figure>
+                    <div class="payment-method-wrapper">
+                        <figure>
+                            <img src="./img/cash-outline.svg" alt="An outline of a three bills of cash">
+                        </figure>
+                        <p class="upper-case semibold-subtitle01">pay with cash</p>
+                    </div>
                 </div>
                 <div class="payment-method">
-                    <figure>
-                        <img src="./img/splitbill-outline.svg" alt="An outline of a bill between two people">
-                        <figcaption>split bill</figcaption>
-                    </figure>
+                    <div class="payment-method-wrapper">
+                        <figure>
+                            <img src="./img/splitbill-outline.svg" alt="An outline of a bill between two people">
+                        </figure>
+                        <p class="upper-case semibold-subtitle01">split bill</p>
+                    </div>
                 </div>
             </main>
 
             <footer class="payment-modal-footer">
-                <div class="payment-modal-footer-left-col">
-                    <h3>Order summary</h3>
-                    <div>
-                        <h5>items: 8</h5>
-                        <h5>order total: $85.00</h5>
+                <div class="payment-modal-footer-left">
+                    <h5>Order summary</h5>
+                    <div class="payment-modal-footer-left-text">
+                        <h6 class="upper-case">items: 8</h6>
+                        <h6 class="upper-case">order total: $85.00</h6>
                     </div>
                 </div>
-                <div class="payment-modal-footer-right-col">
-                    <h3>Payment details</h3>
-                    <div>
+                <div class="payment-modal-footer-right">
+                    <h5>Payment details</h5>
+                    <div class="payment-modal-footer-right-form">
                         <form action="">
-                            <input type="text" name="" id="">
-                            <input type="text" name="" id="">
-                            <input type="text" name="" id="">
-                            <input type="text" name="" id="">
+                            <input 
+                            class="col-span-3"
+                            id="cardNumber"
+                            name="card-number"  
+                            type="number"
+                            placeholder="Card number" 
+                            required>
+                            <input 
+                            class="col-span-3"
+                            id="cardName"
+                            name="card-name"  
+                            type="text"
+                            placeholder="Cardholder name"
+                            required>
+                            <input 
+                            class="col-span-2" 
+                            id="cardExpiryDate"
+                            name="card-expiry-date"
+                            type="number"
+                            placeholder="Expiry date"
+                            required>
+                            <input 
+                            class="col-span-1"
+                            id="cardCvv"
+                            name="card-cvv"
+                            type="number"
+                            placeholder="CVV"
+                            required>
+                            <div class="checkbox-wrapper col-span-2">
+                            <input 
+                            class="receipt-checkbox"
+                            id="receiptCheckbox"
+                            name="receipt-checkbox"
+                            type="checkbox">
+                            <label class="regular-subtitle02" for="card-cvv">Request receipt</label>
+                        </div>
                             <button type="submit" value="submit">submit</button>
                         </form>
-     
+
                     </div>
                 </div>
 
             </footer>
-            
+
 
 
         </div>

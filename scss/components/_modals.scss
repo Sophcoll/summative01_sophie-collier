@@ -3,35 +3,129 @@
 
 
 .payment-modal-wrapper {
-    background-color: bisque;
+    background-color: $white;
     @include flexCenter(column);
+    gap: 5rem;
     width: 70vw;
+    padding: 7rem;
 
     .payment-modal-header {
-        background-color: pink;
         flex: 1;
         @include flexCenter(column);
+        
+        h5 {
+            @include semiBoldCenter;
+        }
     }
 
     .payment-modal-body {
-        background-color: aqua;
         width: 100%;
         flex: 1;
-        @include gridColumn03(2rem);
+        @include gridColumn03(5rem);
+        // @include flex(space-evenly, row);
 
         .payment-method {
-            background-color: purple;
-            align-self: center;
+            @include flexCenter(column);
+            outline: $red01 solid 0.2rem;
+            background-color: $white;
+            padding: 3rem;
+
+            .payment-method-wrapper {
+                @include flexCenter(column);
+                flex: 1;
+                gap: 2rem;
+
+                p {
+                    flex: 1;
+                    text-align: center;
+                }
+            }
         }
-
-
     }
 
     .payment-modal-footer {
-        background-color: cadetblue;
+        width: 100%;
         flex: 1;
+        @include gridColumn02(5rem);
 
+        .payment-modal-footer-left {
+            @include  flexCenter(column);
+            gap: 2rem;
+
+            h5 {
+                width: 100%;
+                justify-self: flex-start;
+            }
+
+            .payment-modal-footer-left-text {
+                @include flexCenter(column);
+                gap: 1rem;
+                width: 100%;
+                flex: 1;
+                @include semiBoldCenter;
+                border: $red01 solid 0.2rem;
+            }
+        }
+
+        .payment-modal-footer-right {
+            @include flexCenter(column);
+            gap: 2rem;
+
+            h5 {
+                width: 100%;
+                justify-self: flex-start;
+            }
+
+            .payment-modal-footer-right-form {
+                flex: 1;
+                width: 100%;
+                @include flexCenter(column);
+
+                form {
+                    width: 100%;
+                    @include gridColumn03(2rem);
+
+                    input {
+                        height: 4.5rem;
+                        border: $grey02 solid 0.1rem;
+
+                        &::placeholder {
+                            font-size: 1.6rem;
+                            font-weight: 200;
+                            line-height: 2.4rem;
+                            padding: 0.5rem;
+                        }
+
+                    }
+
+                    input:nth-of-type(5){
+                        justify-self: left;
+                    }
+
+                    .checkbox-wrapper {
+                        @include flex(flex-start, row);
+
+                        label {
+                            padding-left: 1rem;
+                        }
+                    }
+
+
+                }
+            }
+        }
     }
+}
 
 
+.col-span-3 {
+    grid-column: span 3;
+}
+
+.col-span-2 {
+    grid-column: span 2;
+}
+
+.col-span-1 {
+    grid-column: span 1;
 }
