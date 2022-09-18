@@ -16,6 +16,8 @@
 // GENERAL STYLING
 
     .top-nav-wrapper {
+      background: url("../img/pattern-background.svg") center no-repeat;
+      background-size: cover;
       grid-column: span 8;
       background-color: $red01;
       padding: 2.5rem 5rem 2.5rem 7rem;

@@ -3,6 +3,8 @@
 @use "../components/" as *;
 
 .homepage-body {
+  background: url("../img/pattern-background.svg") center no-repeat;
+  background-size: cover;
   background-color: $red01;
   min-height: 100vh;
   min-width: 100vw;
