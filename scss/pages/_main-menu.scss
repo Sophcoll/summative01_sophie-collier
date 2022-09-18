@@ -31,7 +31,11 @@
 
         .main-menu-list-item {
           @include flexCenter(column);
-          outline: $red01 solid 0.3rem;
+          outline: $red01 solid 0.2rem;
+
+          &:hover {
+            background-color: $red08;
+          }
 
           a {
             @include flexCenter(column);

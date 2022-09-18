@@ -1,0 +1,92 @@
+@use "../global/" as *;
+@use "../abstracts/" as *;
+@use "../components/" as *;
+
+.final-page-body {
+  background-color: $red01;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+  @include flexCenter(column);
+
+  .red-btn04 {
+    position: absolute;
+    top: 7rem;
+    right: 7rem;
+  }
+}
+
+.body-wrapper {
+  main {
+    width: 65vw;
+    margin: auto;
+
+    .final-page-title-wrapper {
+      figure {
+        width: 27rem;
+        margin: auto;
+        padding-bottom: 3rem;
+      }
+      h1,
+      h3 {
+        @include regularCenter;
+      }
+
+      h1 {
+        padding-bottom: 3.6rem;
+      }
+
+      h3 {
+        padding-bottom: 4rem;
+      }
+    }
+
+    .final-page-body-wrapper {
+      border-top: solid white 0.2rem;
+      border-bottom: solid white 0.2rem;
+      padding: 3rem 0;
+      margin-bottom: 4rem;
+
+      h5 {
+        @include semiBoldCenter;
+        padding-bottom: 4rem;
+      }
+
+      p {
+        @include regularCenter;
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+    }
+  }
+
+}
+
+.final-page-footer {
+    @include flexCenter(column);
+    gap: 3rem;
+
+
+    textarea {
+        width: 100%;
+        height: 16rem;
+        border: none;
+
+        &::placeholder {
+            font-size: 1.6rem;
+            font-weight: 200;
+            line-height: 2.4rem;
+            padding: 3rem;
+    }
+}
+
+
+
+    .get-started-btn {
+      @include flexCenter(column);
+
+      a {
+        margin: auto;
+      }
+    }
+}

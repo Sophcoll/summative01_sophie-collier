@@ -1,6 +1,8 @@
 @use "../global/" as *;
 @use "../abstracts/" as *;
 
+// PAYMENT MODAL
+
 
 .payment-modal-wrapper {
     background-color: $white;
@@ -88,16 +90,33 @@
                     width: 100%;
                     @include gridColumn03(2rem);
 
-                    input {
-                        height: 4.5rem;
+                    .input-wrapper {
+                        width: 100%;
                         border: $grey02 solid 0.1rem;
-
-                        &::placeholder {
-                            font-size: 1.6rem;
-                            font-weight: 200;
-                            line-height: 2.4rem;
-                            padding: 1rem;
+                        @include flex(flex-start, row);
+                        position: relative;
+                        
+                        
+                        img {
+                            position: absolute;
+                            right: 1rem;
+                            width: 2rem;
+                            height: 2rem;
+                            
                         }
+
+                        input {
+                            height: 4.5rem;
+                            flex: 1;
+                            border: none;
+    
+                            &::placeholder {
+                                font-size: 1.6rem;
+                                font-weight: 200;
+                                line-height: 2.4rem;
+                                padding: 1rem;
+                            }
+                    }
 
                     }
 
@@ -131,4 +150,44 @@
 
 .col-span-1 {
     grid-column: span 1;
+}
+
+
+
+
+// FOOD ITEM MODAL 
+
+.menu-item-modal-wrapper {
+background-color: aqua;
+@include gridColumn02(0);
+
+.menu-item-modal-left {
+    @include flexCenter(column);
+    background-color: pink;
+
+    figure {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+.menu-item-modal-right {
+@include flexCenter(column);
+background-color: dodgerblue;
+
+.menu-item-modal-header {
+
+    p {
+        @include semiBoldCenter;
+    }
+
+    h3 {
+        @include regularCenter;
+    }
+
+}
+
+}
+
 }

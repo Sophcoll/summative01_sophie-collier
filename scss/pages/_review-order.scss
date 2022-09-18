@@ -3,10 +3,8 @@
 @use "../components/" as *;
 
 .review-order-wrapper {
-  background-color: aqua;
 
   .review-order {
-    background-color: bisque;
     height: 90vh;
     @include flexCenter(column);
 
@@ -59,7 +57,8 @@
           }
 
           .order-summary-footer {
-            width: 100%;
+            background-color: aqua;
+            width: 85%;
             @include flexCenter(column);
             gap: 2rem;
             flex: 1;
@@ -68,14 +67,17 @@
               width: 100%;
               background-color: aqua;
 
-              input {
-                width: 50rem;
+              &::placeholder {
+                font-size: 1.2rem;
+                font-weight: 200;
+                line-height: 2.4rem;
+                padding: 1rem;
               }
             }
 
             .order-summary-btn-wrapper {
-              @include flexCenter(row);
-              gap: 2rem;
+              width: 100%;
+              @include flex(space-between, row);
             }
           }
         }

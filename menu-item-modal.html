@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/resets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Menu item modal</title>
+</head>
+
+<body>
+
+    <!-- TOP NAV -->
+
+    <header class="top-nav-large">
+        <div class="top-nav-wrapper">
+            <div class="logo-wrapper">
+                <figure class="logo">
+                    <img src="./img/tanukis-cave-logo-white.svg" alt="tanukis-cave-logo-white">
+                    <figcaption>the cave</figcaption>
+                </figure>
+            </div>
+            <div class="top-nav-list-wrapper">
+                <nav>
+                    <ul class="top-nav-list">
+                        <li><a href="./main-menu.html">back to main menu</a></li>
+                        <li><a href="#">help</a></li>
+                        <li><a href="#">change language</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN SECTION  -->
+
+    <dialog class="payment-modal" id="paymentModal" open>
+
+        <div class="menu-item-modal-wrapper">
+        <div class="menu-item-modal-left">
+            <figure>
+                <img src="https://picsum.photos/200" alt="placeholder image">
+            </figure>
+        </div>
+
+        <div class="menu-item-modal-right">
+            <form class="close-modal" method="dialog">
+                <button type="submit"><img src="./img/exit-icon.svg" alt="cancel icon"></button>
+              </form>
+            <header class="menu-item-modal-header">
+                <p class="upper-case">yakitori</p>
+                <h3>Tender cicken thigh $7.50 (GF) (DF)</h3>
+            </header>
+            <main class="menu-item-modal-body">
+                <p>Made with free-range locally sourced chicken.</p>
+                <p>2 sticks per serving</p>
+            </main>
+            <footer class="menu-item-modal-footer">
+                <figure>
+                    <img src="./img/time-estimate-outline.svg" alt="an outline of three clocks to give a time estimate">
+                    <figcaption>fast to prepare</figcaption>
+                </figure>
+                <div class="add-to-cart-btn">
+                    <a class="white-btn05" href="#">add to cart</a>
+                </div>
+
+            </footer>
+        </div>
+
+
+
+
+    </dialog>
+
+
+</body>
+
+</html>
