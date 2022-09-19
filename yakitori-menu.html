@@ -10,6 +10,7 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js" defer></script>
     <title>Yakitori Menu</title>
 </head>
 
@@ -28,9 +29,15 @@
             <div class="top-nav-list-wrapper">
                 <nav>
                     <ul class="top-nav-list">
-                        <li><a href="./main-menu.html">back to main menu</a></li>
-                        <li><a href="#">help</a></li>
-                        <li><a href="#">change language</a></li>
+                        <li class="back"><a href="./index.html">back to start</a></li>
+                        <li class="help"><a href="./menu-item-modal.html">help</a></li>
+                        <li class="dropdown" >
+                            <a onclick="toggleClass()" href="#">change language</a>
+                            <ul class="dropdown-menu small-menu hide">
+                                <li><a href="#" class="menu-item">Japanese</a></li>
+                                <li><a href="#" class="menu-item">Te Reo Māori</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -89,6 +96,8 @@
 
                 <main class="chicken-yakitori-body">
 
+
+
                     <div>
                         <div class="menu-card">
                             <div class="menu-card-img-wrapper">
@@ -98,7 +107,7 @@
                             </div>
                             <div class="menu-card-text-wrapper">
                                 <header>
-                                    <img src="./img/info-outline-red.svg" alt="information icon">
+                                    <img onclick="window.paymentModal.showModal()" src="./img/info-outline-red.svg" alt="information icon">
                                 </header>
                                 <main>
                                     <p>Tender chicken thigh meat (GF) <span>$7.50</span></p>
@@ -111,6 +120,48 @@
                             </div>
                         </div>
                     </div>
+
+
+<!-- POP-UP MENU MODAL  -->
+
+                    <dialog class="payment-modal" id="paymentModal">
+                        <div class="menu-item-modal-wrapper">
+                        <div class="menu-item-modal-left">
+                            <figure>
+                                <img src="https://picsum.photos/200" alt="placeholder image">
+                            </figure>
+                        </div>
+                
+                        <div class="menu-item-modal-right">
+                            <form class="close-modal" method="dialog">
+                                <button type="submit"><img src="./img/exit-icon.svg" alt="cancel icon"></button>
+                              </form>
+                            <div class="menu-item-modal-right-wrapper">
+                            <header class="menu-item-modal-header">
+                                <h6 class="upper-case">yakitori</h6>
+                                <h3>Tender chicken thigh $7.50</h3>
+                                <p class="upper-case">(gf) (df)</p>
+                            </header>
+                            <main class="menu-item-modal-body">
+                                <h5>Made with free-range locally sourced chicken.</h5>
+                                <p>2 sticks per serving</p>
+                            </main>
+                            <footer class="menu-item-modal-footer">
+                                <figure>
+                                    <img src="./img/time-estimate-outline.svg" alt="an outline of three clocks to give a time estimate">
+                                    <figcaption>fast to prepare</figcaption>
+                                </figure>
+                                <div class="add-to-cart-btn">
+                                    <a class="white-btn01" href="#">add to cart</a>
+                                </div>
+                            </footer>
+                        </div>
+                        </div>
+                    </dialog>
+
+
+
+<!-- MENU CARD ITEMS -->
 
                     <div>
                         <div class="menu-card">

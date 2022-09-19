@@ -5,70 +5,97 @@
 // SIZE STYLING
 
 .top-nav-small {
-    width: 65vw;
-  }
+  width: 65vw;
+}
 
-  .top-nav-large {
-    width: 100vw;
-  }
-  
+.top-nav-large {
+  width: 100vw;
+}
 
 // GENERAL STYLING
 
-    .top-nav-wrapper {
-      background: url("../img/pattern-background.svg") center no-repeat;
-      background-size: cover;
-      grid-column: span 8;
-      background-color: $red01;
-      padding: 2.5rem 5rem 2.5rem 7rem;
-      @include flex(flex-start, row);
-      gap: 5rem;
-      height: 10vh;
-  
-      .logo-wrapper {
-        .logo {
-          @include flexCenter(column);
-          width: 7rem;
-  
-          img {
-            padding-bottom: 0.8rem;
-          }
+.top-nav-wrapper {
+  background: url("../img/pattern-background.svg") center no-repeat;
+  background-size: cover;
+  grid-column: span 8;
+  background-color: $red01;
+  padding: 2.5rem 5rem 2.5rem 7rem;
+  @include flex(flex-start, row);
+  gap: 5rem;
+  height: 10vh;
+
+  .logo-wrapper {
+    .logo {
+      @include flexCenter(column);
+      width: 7rem;
+
+      img {
+        padding-bottom: 0.8rem;
+      }
+    }
+  }
+
+  .top-nav-list-wrapper {
+    flex: 1;
+
+    .top-nav-list {
+      @include flex(flex-end, row);
+      gap: 3rem;
+
+      .back {
+        margin-right: auto;
+
+        &::before {
+          content: url("../img/back-chevron-outline.svg");
+          padding-right: 0.5rem;
         }
       }
-  
-      .top-nav-list-wrapper {
-          flex: 1;
-       
-        .top-nav-list {
-          @include flex(flex-end, row);
-          gap: 3rem;
-  
-          li:first-of-type {
-              margin-right: auto;
-  
-              &::before {
-              content: url("../img/back-chevron-outline.svg");
-              padding-right: 0.5rem;
-              }
-          }
-  
-          li:nth-of-type(2) {
-  
-              &::before {
-              content: url("../img/help-outline-white.svg");
-              padding-right: 0.5rem;
-              }
-          }
-  
-  
-          li:last-of-type {
-  
-              &::after {
-              content: url("../img/down-chevron-outline-white.svg");
-              padding-left: 0.5rem;
-              }
-          }
+
+      .help {
+        &::before {
+          content: url("../img/help-outline-white.svg");
+          padding-right: 0.5rem;
+        }
+      }
+
+      .dropdown {
+        &::after {
+          content: url("../img/down-chevron-outline-white.svg");
+          padding-left: 0.5rem;
         }
       }
     }
+  }
+}
+
+// SMALL DROPDOWN MENU STYLING
+
+.small-menu {
+  width: 65vw;
+}
+
+.large-menu {
+  width: 100vw;
+}
+
+.dropdown-menu {
+  @include flexCenter(column);
+  position: absolute;
+  gap: 1rem;
+  background-color: $red04;
+  top: 10vh;
+  left: 0;
+  padding: 1.6rem 5rem;
+
+  li {
+    align-self: flex-end;
+  }
+}
+
+// Class below toggles the visibility on and off with the help of JS command
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
 

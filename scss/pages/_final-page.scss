@@ -4,12 +4,14 @@
 
 .final-page-body {
   background-color: $red01;
+  background: url("../img/pattern-background.svg") center no-repeat;
+  background-size: cover;
   min-height: 100vh;
   min-width: 100vw;
   position: relative;
   @include flexCenter(column);
 
-  .red-btn04 {
+  .red-white-btn04 {
     position: absolute;
     top: 7rem;
     right: 7rem;

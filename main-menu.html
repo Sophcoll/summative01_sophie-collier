@@ -10,6 +10,7 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js" defer></script>
     <title>Main Menu</title>
 </head>
 
@@ -28,14 +29,22 @@
             <div class="top-nav-list-wrapper">
                 <nav>
                     <ul class="top-nav-list">
-                        <li><a href="./index.html">back to start</a></li>
-                        <li><a href="./menu-item-modal.html">help</a></li>
-                        <li><a href="#">change language</a></li>
+                        <li class="back"><a href="./index.html">back to start</a></li>
+                        <li class="help"><a href="./menu-item-modal.html">help</a></li>
+                        <li class="dropdown" >
+                            <a onclick="toggleClass()" href="#">change language</a>
+                            <ul class="dropdown-menu small-menu hide">
+                                <li><a href="#" class="menu-item">Japanese</a></li>
+                                <li><a href="#" class="menu-item">Te Reo Māori</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+
+
 
     <!-- MAIN SECTION  -->
 

@@ -3,12 +3,20 @@
 
 // PAYMENT MODAL
 
+.payment-modal {
+    outline: $red01 solid 0.3rem;
+    background-color: $white;
+}
+
 .payment-modal-wrapper {
-  background-color: $white;
   @include flexCenter(column);
   gap: 5rem;
   width: 70vw;
-  padding: 7rem;
+  padding: 7rem 7rem 10rem;
+
+  .close-modal {
+    margin-left: auto;
+  }
 
   .payment-modal-header {
     flex: 1;
@@ -27,7 +35,6 @@
     .payment-method {
       @include flexCenter(column);
       outline: $red01 solid 0.2rem;
-      background-color: $white;
       padding: 3rem;
 
       &:first-of-type {

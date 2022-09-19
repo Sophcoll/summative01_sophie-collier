@@ -42,11 +42,34 @@
     }
 }
 
+
 .red-btn05 {
     @include btn;
     @include redBtn;
     @include btn-size05;
 
+    &:hover {
+        @include whiteBtn
+    }
+}
+
+// BUTTONS FOR FIRST AND LAST PAGE
+
+.red-white-btn04 {
+    @include btn;
+    @include redWhiteBtn;
+    @include btn-size04;
+   
+    &:hover {
+        @include whiteBtn
+    }
+}
+
+.red-white-btn02 {
+    @include btn;
+    @include redWhiteBtn;
+    @include btn-size02;
+   
     &:hover {
         @include whiteBtn
     }

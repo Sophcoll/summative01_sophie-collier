@@ -56,12 +56,19 @@
 @mixin redBtn {
     color: $white;
     background-color: $red01;
+    outline: 0.2rem solid $red01;
 }
 
 @mixin whiteBtn {
     color: $red01;
     background-color: $white;
     outline: 0.2rem solid $red01;
+}
+
+@mixin redWhiteBtn {
+    color: $white;
+    background-color: $red01;
+    outline: 0.2rem solid $white;
 }
 
 // LAYOUT MIXINS
