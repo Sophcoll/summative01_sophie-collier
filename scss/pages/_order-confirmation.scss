@@ -5,9 +5,11 @@
 .order-confirmation-wrapper {
 
   .order-confirmation {
-    height: 90vh;
+    height: 100vh;
     @include flexCenter(column);
     gap: 2rem;
+    padding: 15rem 7rem 5rem;
+
 
     .order-confirmation-header {
       @include flexCenter(column);

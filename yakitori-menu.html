@@ -29,9 +29,9 @@
             <div class="top-nav-list-wrapper">
                 <nav>
                     <ul class="top-nav-list">
-                        <li class="back"><a href="./index.html">back to start</a></li>
+                        <li class="back"><a href="./main-menu.html">back to main menu</a></li>
                         <li class="help"><a href="./menu-item-modal.html">help</a></li>
-                        <li class="dropdown" >
+                        <li class="dropdown">
                             <a onclick="toggleClass()" href="#">change language</a>
                             <ul class="dropdown-menu small-menu hide">
                                 <li><a href="#" class="menu-item">Japanese</a></li>
@@ -70,11 +70,10 @@
                 <footer class="yakitori-intro-footer">
                     <nav>
                         <ul class="yakitori-menu-list">
-                            <li class="yakitori-menu-list-item white-btn02"><a href="#"></a>chicken</li>
-                            <li class="yakitori-menu-list-item white-btn02"><a href="#"></a>seafood</li>
-                            <li class="yakitori-menu-list-item white-btn02"><a href="#"></a>pork</li>
-                            <li class="yakitori-menu-list-item white-btn02"><a href="#"></a>beef</li>
-                            <li class="yakitori-menu-list-item white-btn02"><a href="#"></a>vegetarian</li>
+                            <li class="yakitori-menu-list-item"><a class="white-btn02" href="#chicken-yakitori">chicken</a></li>
+                            <li class="yakitori-menu-list-item"><a class="white-btn02" href="#seafood-yakitori">seafood</a></li>
+                            <li class="yakitori-menu-list-item"><a class="white-btn02" href="#pork-yakitori">pork</a></li>
+                            <li class="yakitori-menu-list-item"><a class="white-btn02" href="#beef-yakitori">beef</a></li>
                         </ul>
                     </nav>
 
@@ -86,28 +85,27 @@
 
         <!-- CHICKEN SECTION -->
 
-        <div class="chicken-yakitori-wrapper">
+        <div class="yakitori-wrapper">
 
-            <section class="chicken-yakitori-section">
+            <section id="chicken-yakitori" class="yakitori-section">
 
-                <header class="chicken-yakitori-header">
+                <header class="yakitori-header">
                     <h4>Chicken Yakitori</h4>
                 </header>
 
-                <main class="chicken-yakitori-body">
-
-
+                <main class="yakitori-body">
 
                     <div>
                         <div class="menu-card">
                             <div class="menu-card-img-wrapper">
                                 <figure class="menu-card-img">
-                                    <img src="https://picsum.photos/200" alt="placeholder image">
+                                    <img src="./img/tender-chicken-thigh.jpg" alt="image of two chicken skewers">
                                 </figure>
                             </div>
                             <div class="menu-card-text-wrapper">
                                 <header>
-                                    <img onclick="window.paymentModal.showModal()" src="./img/info-outline-red.svg" alt="information icon">
+                                    <img onclick="window.paymentModal.showModal()" src="./img/info-outline-red.svg"
+                                        alt="information icon">
                                 </header>
                                 <main>
                                     <p>Tender chicken thigh meat (GF) <span>$7.50</span></p>
@@ -122,52 +120,53 @@
                     </div>
 
 
-<!-- POP-UP MENU MODAL  -->
+                    <!-- POP-UP MENU MODAL FOR FIRST CHICKEN YAKITORI MENU CARD  -->
 
                     <dialog class="payment-modal" id="paymentModal">
                         <div class="menu-item-modal-wrapper">
-                        <div class="menu-item-modal-left">
-                            <figure>
-                                <img src="https://picsum.photos/200" alt="placeholder image">
-                            </figure>
-                        </div>
-                
-                        <div class="menu-item-modal-right">
-                            <form class="close-modal" method="dialog">
-                                <button type="submit"><img src="./img/exit-icon.svg" alt="cancel icon"></button>
-                              </form>
-                            <div class="menu-item-modal-right-wrapper">
-                            <header class="menu-item-modal-header">
-                                <h6 class="upper-case">yakitori</h6>
-                                <h3>Tender chicken thigh $7.50</h3>
-                                <p class="upper-case">(gf) (df)</p>
-                            </header>
-                            <main class="menu-item-modal-body">
-                                <h5>Made with free-range locally sourced chicken.</h5>
-                                <p>2 sticks per serving</p>
-                            </main>
-                            <footer class="menu-item-modal-footer">
+                            <div class="menu-item-modal-left">
                                 <figure>
-                                    <img src="./img/time-estimate-outline.svg" alt="an outline of three clocks to give a time estimate">
-                                    <figcaption>fast to prepare</figcaption>
+                                    <img src="./img/tender-chicken-thigh.jpg" alt="placeholder image">
                                 </figure>
-                                <div class="add-to-cart-btn">
-                                    <a class="white-btn01" href="#">add to cart</a>
+                            </div>
+
+                            <div class="menu-item-modal-right">
+                                <form class="close-modal" method="dialog">
+                                    <button type="submit"><img src="./img/exit-icon.svg" alt="cancel icon"></button>
+                                </form>
+                                <div class="menu-item-modal-right-wrapper">
+                                    <header class="menu-item-modal-header">
+                                        <h6 class="upper-case">yakitori</h6>
+                                        <h3>Tender chicken thigh $7.50</h3>
+                                        <p class="upper-case">(gf) (df)</p>
+                                    </header>
+                                    <main class="menu-item-modal-body">
+                                        <h5>Made with free-range locally sourced chicken.</h5>
+                                        <p>2 sticks per serving</p>
+                                    </main>
+                                    <footer class="menu-item-modal-footer">
+                                        <figure>
+                                            <img src="./img/time-estimate-outline.svg"
+                                                alt="an outline of three clocks to give a time estimate">
+                                            <figcaption>fast to prepare</figcaption>
+                                        </figure>
+                                        <div class="add-to-cart-btn">
+                                            <a class="white-btn01" href="#">add to cart</a>
+                                        </div>
+                                    </footer>
                                 </div>
-                            </footer>
-                        </div>
-                        </div>
+                            </div>
                     </dialog>
 
 
 
-<!-- MENU CARD ITEMS -->
+                    <!-- CHICKEN YAKITORI MENU CARD ITEMS CONTINUED -->
 
                     <div>
                         <div class="menu-card">
                             <div class="menu-card-img-wrapper">
                                 <figure class="menu-card-img">
-                                    <img src="https://picsum.photos/200" alt="placeholder image">
+                                    <img src="./img/chicken-capsicum.jpg" alt="placeholder image">
                                 </figure>
                             </div>
                             <div class="menu-card-text-wrapper">
@@ -175,7 +174,7 @@
                                     <img src="./img/info-outline-red.svg" alt="information icon">
                                 </header>
                                 <main>
-                                    <p>Tender chicken thigh meat (GF) <span>$7.50</span></p>
+                                    <p>Capsicum & chicken mince (GF) <span>$8.00</span></p>
                                 </main>
                                 <footer>
                                     <div class="add-to-cart-btn">
@@ -189,7 +188,7 @@
                         <div class="menu-card">
                             <div class="menu-card-img-wrapper">
                                 <figure class="menu-card-img">
-                                    <img src="https://picsum.photos/200" alt="placeholder image">
+                                    <img src="./img/chicken-yakitori.jpg" alt="An image of two chicken skewers">
                                 </figure>
                             </div>
                             <div class="menu-card-text-wrapper">
@@ -197,7 +196,7 @@
                                     <img src="./img/info-outline-red.svg" alt="information icon">
                                 </header>
                                 <main>
-                                    <p>Tender chicken thigh meat (GF) <span>$7.50</span></p>
+                                    <p>Chicken tenderloin (GF) <span>$7.50</span></p>
                                 </main>
                                 <footer>
                                     <div class="add-to-cart-btn">
@@ -211,7 +210,7 @@
                         <div class="menu-card">
                             <div class="menu-card-img-wrapper">
                                 <figure class="menu-card-img">
-                                    <img src="https://picsum.photos/200" alt="placeholder image">
+                                    <img src="./img/chicken-leek.jpg" alt="An image of two chicken & leek skewers">
                                 </figure>
                             </div>
                             <div class="menu-card-text-wrapper">
@@ -219,7 +218,7 @@
                                     <img src="./img/info-outline-red.svg" alt="information icon">
                                 </header>
                                 <main>
-                                    <p>Tender chicken thigh meat (GF) <span>$7.50</span></p>
+                                    <p>Tender chicken thigh & leek <span>$8.00</span></p>
                                 </main>
                                 <footer>
                                     <div class="add-to-cart-btn">
@@ -229,10 +228,100 @@
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <div class="menu-card">
+                            <div class="menu-card-img-wrapper">
+                                <figure class="menu-card-img">
+                                    <img src="./img/chicken-mince.jpg" alt="An image of two chicken mince skewers">
+                                </figure>
+                            </div>
+                            <div class="menu-card-text-wrapper">
+                                <header>
+                                    <img src="./img/info-outline-red.svg" alt="information icon">
+                                </header>
+                                <main>
+                                    <p>Chicken mince with shisho leaves <span>$7.00</span></p>
+                                </main>
+                                <footer>
+                                    <div class="add-to-cart-btn">
+                                        <a class="white-btn05" href="#">add to cart</a>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="menu-card">
+                            <div class="menu-card-img-wrapper">
+                                <figure class="menu-card-img">
+                                    <img src="./img/chicken-giblet.jpg" alt="An image of two chicken giblet skewers">
+                                </figure>
+                            </div>
+                            <div class="menu-card-text-wrapper">
+                                <header>
+                                    <img src="./img/info-outline-red.svg" alt="information icon">
+                                </header>
+                                <main>
+                                    <p>Chicken giblets (GF) <span>$6.00</span></p>
+                                </main>
+                                <footer>
+                                    <div class="add-to-cart-btn">
+                                        <a class="white-btn05" href="#">add to cart</a>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="menu-card">
+                            <div class="menu-card-img-wrapper">
+                                <figure class="menu-card-img">
+                                    <img src="./img/chicken-wasabi-plum.jpg"
+                                        alt="An image of two chicken yakitori skewers">
+                                </figure>
+                            </div>
+                            <div class="menu-card-text-wrapper">
+                                <header>
+                                    <img src="./img/info-outline-red.svg" alt="information icon">
+                                </header>
+                                <main>
+                                    <p>Chicken tenderloin with wasabi <span>$9.00</span></p>
+                                </main>
+                                <footer>
+                                    <div class="add-to-cart-btn">
+                                        <a class="white-btn05" href="#">add to cart</a>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="menu-card">
+                            <div class="menu-card-img-wrapper">
+                                <figure class="menu-card-img">
+                                    <img src="./img/chicken-wing.jpg"
+                                        alt="An image of two chicken yakitori wing skewers">
+                                </figure>
+                            </div>
+                            <div class="menu-card-text-wrapper">
+                                <header>
+                                    <img src="./img/info-outline-red.svg" alt="information icon">
+                                </header>
+                                <main>
+                                    <p>Chicken wings with soy glaze <span>$9.50</span></p>
+                                </main>
+                                <footer>
+                                    <div class="add-to-cart-btn">
+                                        <a class="white-btn05" href="#">add to cart</a>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+
 
                 </main>
 
-                <footer class="chicken-yakitori-footer">
+                <footer class="yakitori-footer">
                     <div class="back-to-top-btn">
                         <a class="white-btn05" href="#">back to top</a>
                     </div>
@@ -241,7 +330,314 @@
             </section>
         </div>
 
+        <!-- SEAFOOD YAKITORI SECTION -->
+
+        <div class="yakitori-wrapper">
+
+            <section id="seafood-yakitori" class="yakitori-section">
+
+                <header class="yakitori-header">
+                    <h4>Seafood Yakitori</h4>
+                </header>
+
+                <!-- SEAFOOD YAKITORI MENU CARD ITEMS -->
+
+                <main class="yakitori-body">
+                    <div>
+                        <div class="menu-card">
+                            <div class="menu-card-img-wrapper">
+                                <figure class="menu-card-img">
+                                    <img src="./img/aburi.jpg" alt="Image of two grilled Aburi skewers">
+                                </figure>
+                            </div>
+                            <div class="menu-card-text-wrapper">
+                                <header>
+                                    <img src="./img/info-outline-red.svg" alt="information icon">
+                                </header>
+                                <main>
+                                    <p>Grilled Aburi (GF) (DF) <span>$6.50</span></p>
+                                </main>
+                                <footer>
+                                    <div class="add-to-cart-btn">
+                                        <a class="white-btn05" href="#">add to cart</a>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="menu-card">
+                            <div class="menu-card-img-wrapper">
+                                <figure class="menu-card-img">
+                                    <img src="./img/scallops-asaparagus.jpg"
+                                        alt="An image of two scallop and asparagus skewers">
+                                </figure>
+                            </div>
+                            <div class="menu-card-text-wrapper">
+                                <header>
+                                    <img src="./img/info-outline-red.svg" alt="information icon">
+                                </header>
+                                <main>
+                                    <p>Scallops & asparagus (GF) <span>$7.50</span></p>
+                                </main>
+                                <footer>
+                                    <div class="add-to-cart-btn">
+                                        <a class="white-btn05" href="#">add to cart</a>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="menu-card">
+                            <div class="menu-card-img-wrapper">
+                                <figure class="menu-card-img">
+                                    <img src="./img/salmon-onion.jpg"
+                                        alt="image of two skewers with salmon and sliced onion">
+                                </figure>
+                            </div>
+                            <div class="menu-card-text-wrapper">
+                                <header>
+                                    <img src="./img/info-outline-red.svg" alt="information icon">
+                                </header>
+                                <main>
+                                    <p>Salmon and sliced onions <span>$10.00</span></p>
+                                </main>
+                                <footer>
+                                    <div class="add-to-cart-btn">
+                                        <a class="white-btn05" href="#">add to cart</a>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="menu-card">
+                            <div class="menu-card-img-wrapper">
+                                <figure class="menu-card-img">
+                                    <img src="./img/salmon-avo.jpg" alt="An image of two salmon & avocado skewers">
+                                </figure>
+                            </div>
+                            <div class="menu-card-text-wrapper">
+                                <header>
+                                    <img src="./img/info-outline-red.svg" alt="information icon">
+                                </header>
+                                <main>
+                                    <p>Salmon and avocado (GF) (DF) <span>$10.00</span></p>
+                                </main>
+                                <footer>
+                                    <div class="add-to-cart-btn">
+                                        <a class="white-btn05" href="#">add to cart</a>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="menu-card">
+                            <div class="menu-card-img-wrapper">
+                                <figure class="menu-card-img">
+                                    <img src="./img/tuna-leek.jpg" alt="An image of two tuna and leek skewers">
+                                </figure>
+                            </div>
+                            <div class="menu-card-text-wrapper">
+                                <header>
+                                    <img src="./img/info-outline-red.svg" alt="information icon">
+                                </header>
+                                <main>
+                                    <p>Tuna with leek (GF) (DF) <span>$8.00</span></p>
+                                </main>
+                                <footer>
+                                    <div class="add-to-cart-btn">
+                                        <a class="white-btn05" href="#">add to cart</a>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="menu-card">
+                            <div class="menu-card-img-wrapper">
+                                <figure class="menu-card-img">
+                                    <img src="./img/whole-prawn.jpg" alt="An image of two prawn skewers">
+                                </figure>
+                            </div>
+                            <div class="menu-card-text-wrapper">
+                                <header>
+                                    <img src="./img/info-outline-red.svg" alt="information icon">
+                                </header>
+                                <main>
+                                    <p>Whole prawn (GF) (DF) <span>$6.50</span></p>
+                                </main>
+                                <footer>
+                                    <div class="add-to-cart-btn">
+                                        <a class="white-btn05" href="#">add to cart</a>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <footer class="yakitori-footer">
+                    <div class="back-to-top-btn">
+                        <a class="white-btn05" href="#">back to top</a>
+                    </div>
+                </footer>
+
+            </section>
+        </div>
+
+        <!-- PORK YAKITORI SECTION -->
+
+
+        <div class="yakitori-wrapper">
+
+            <section id="pork-yakitori" class="yakitori-section">
+
+                <header class="yakitori-header">
+                    <h4>Pork Yakitori</h4>
+                </header>
+
+                <!-- PORK YAKITORI MENU CARD ITEMS -->
+
+                <main class="yakitori-body">
+                    <div>
+                        <div class="menu-card">
+                            <div class="menu-card-img-wrapper">
+                                <figure class="menu-card-img">
+                                    <img src="./img/pork-yakitori.jpg" alt="Image of two pork belly skewers">
+                                </figure>
+                            </div>
+                            <div class="menu-card-text-wrapper">
+                                <header>
+                                    <img src="./img/info-outline-red.svg" alt="information icon">
+                                </header>
+                                <main>
+                                    <p>Pork belly with spicy kimchi glaze <span>$9.50</span></p>
+                                </main>
+                                <footer>
+                                    <div class="add-to-cart-btn">
+                                        <a class="white-btn05" href="#">add to cart</a>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="menu-card">
+                            <div class="menu-card-img-wrapper">
+                                <figure class="menu-card-img">
+                                    <img src="./img/bacon-asparagus.jpg"
+                                        alt="image of two skewers with bacon-wrapped asparagus">
+                                </figure>
+                            </div>
+                            <div class="menu-card-text-wrapper">
+                                <header>
+                                    <img src="./img/info-outline-red.svg" alt="information icon">
+                                </header>
+                                <main>
+                                    <p>Asparagus wrapped in bacon <span>$6.50</span></p>
+                                </main>
+                                <footer>
+                                    <div class="add-to-cart-btn">
+                                        <a class="white-btn05" href="#">add to cart</a>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <footer class="yakitori-footer">
+                    <div class="back-to-top-btn">
+                        <a class="white-btn05" href="#">back to top</a>
+                    </div>
+                </footer>
+
+            </section>
+        </div>
+
+           <!-- BEEF YAKITORI SECTION -->
+
+
+           <div class="yakitori-wrapper">
+
+            <section id="beef-yakitori" class="yakitori-section">
+
+                <header class="yakitori-header">
+                    <h4>Pork Yakitori</h4>
+                </header>
+
+                <!-- BEEF YAKITORI MENU CARD ITEMS -->
+
+                <main class="yakitori-body">
+                    <div>
+                        <div class="menu-card">
+                            <div class="menu-card-img-wrapper">
+                                <figure class="menu-card-img">
+                                    <img src="./img/beef-ponzu.jpg" alt="Image of two beef scotch fillet skewers">
+                                </figure>
+                            </div>
+                            <div class="menu-card-text-wrapper">
+                                <header>
+                                    <img src="./img/info-outline-red.svg" alt="information icon">
+                                </header>
+                                <main>
+                                    <p>Scotch fillet with ponzu sauce <span>$11.50</span></p>
+                                </main>
+                                <footer>
+                                    <div class="add-to-cart-btn">
+                                        <a class="white-btn05" href="#">add to cart</a>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="menu-card">
+                            <div class="menu-card-img-wrapper">
+                                <figure class="menu-card-img">
+                                    <img src="./img/beef-mince.jpg"
+                                        alt="image of two skewers of beef mince balls">
+                                </figure>
+                            </div>
+                            <div class="menu-card-text-wrapper">
+                                <header>
+                                    <img src="./img/info-outline-red.svg" alt="information icon">
+                                </header>
+                                <main>
+                                    <p>Beef mince with soy glaze <span>$6.50</span></p>
+                                </main>
+                                <footer>
+                                    <div class="add-to-cart-btn">
+                                        <a class="white-btn05" href="#">add to cart</a>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <footer class="yakitori-footer">
+                    <div class="back-to-top-btn">
+                        <a class="white-btn05" href="#">back to top</a>
+                    </div>
+                </footer>
+
+            </section>
+        </div>
     </main>
+
+    <!-- PAGE FOOTER  -->
+
+    <footer class="yakitori-page-footer">
+        <div class="allergy-footer">
+            <p class="upper-case">Allergy and intolerance notice</p>
+            <p>Please advise us of any allergies before ordering. We cannot guarantee against traces of
+                allergens.</p>
+            </div>
+    </footer>
 
 
     <!-- CART  -->

@@ -2,11 +2,10 @@
 @use "../abstracts/" as *;
 @use "../components/" as *;
 
-.main-menu-wrapper {
+.main-wrapper {
   width: 65vw;
-  height: 90vh;
-  padding-left: 7rem;
-  padding-right: 5rem;
+  height: 100vh;
+  padding: 10rem 5rem 5rem 7rem;
   @include flexCenter(column);
 
   .main-menu {
@@ -32,6 +31,7 @@
         .main-menu-list-item {
           @include flexCenter(column);
           outline: $red01 solid 0.2rem;
+          transition: all 0.3s ease-in-out;
 
           &:hover {
             background-color: $red08;
@@ -62,7 +62,6 @@
   }
 }
 
-
 // UTILITY CLASSES TO TWEAK IMAGERY
 
 .image-smaller01 {
@@ -70,6 +69,5 @@
 }
 
 .image-smaller02 {
-    height: 85%;
-  }
-  
+  height: 85%;
+}

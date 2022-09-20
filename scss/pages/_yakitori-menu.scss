@@ -11,8 +11,13 @@
   .yakitori-intro {
     @include flexCenter(column);
     gap: 5rem;
-    padding: 7rem 5rem 7rem 7rem;
+    padding: 15rem 5rem 7rem 7rem;
     border-bottom: $red01 solid 0.1rem;
+
+
+  @media (orientation: portrait) {
+    padding: 18rem 5rem 7rem 5rem;
+  }
 
     .yakitori-intro-header {
       h3 {
@@ -49,31 +54,54 @@
   }
 }
 
-// CHICKEN YAKITORI SECTION
+// YAKITORI SECTIONS
 
-.chicken-yakitori-wrapper {
+.yakitori-wrapper {
   width: 65vw;
   padding: 7rem 5rem 7rem 7rem;
   border-bottom: $red01 solid 0.1rem;
 
+  @media (orientation: portrait) {
+    padding: 7rem;
+  }
 
-  .chicken-yakitori-section {
+
+  .yakitori-section {
     @include flexCenter(column);
     gap: 5rem;
     
-    .chicken-yakitori-header {
+    .yakitori-header {
       @include flexCenter(column);
 
       h4 {
         @include regularCenter;
       }
     }
-    .chicken-yakitori-body {
+    .yakitori-body {
       @include gridColumn02(4rem);
+
+      @media (orientation: portrait) {
+        @include gridColumn01(4rem);
+      }
     }
 
-    .chicken-yakitori-footer {
+    .yakitori-footer {
       @include flexCenter(column);
     }
   }
 }
+
+
+// YAKITORI PAGE FOOTER
+
+.yakitori-page-footer {
+  width: 65vw;
+  @include flexCenter(column);
+  padding: 7rem 5rem 7rem;
+
+  p{
+    @include regularCenter;
+  }
+}
+
+

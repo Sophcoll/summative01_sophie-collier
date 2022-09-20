@@ -5,12 +5,15 @@
 .review-order-wrapper {
 
   .review-order {
-    height: 90vh;
+    height: 100vh;
     @include flexCenter(column);
+    padding: 15rem 7rem 5rem;
+
 
     .review-order-header {
       @include flexCenter(column);
       flex: 1;
+      padding-bottom: 3rem;
 
       h3 {
         @include regularCenter;
@@ -25,7 +28,7 @@
       .order-summary-wrapper {
         @include gridColumn02(0);
         background-color: $white;
-        outline: $red01 solid 0.2rem;
+        outline: $red01 solid 0.1rem;
 
         .order-summary-left-col {
           grid-column: span 1;
@@ -35,14 +38,14 @@
         .order-summary-right-col {
           grid-column: span 1;
           @include flexCenter(column);
-          border-left: $red01 solid 0.2rem;
+          border-left: $red01 solid 0.1rem;
 
           .order-summary-header {
             width: 100%;
             @include flexCenter(column);
             gap: 0.8rem;
             flex: 1;
-            border-bottom: $red01 solid 0.2rem;
+            border-bottom: $red01 solid 0.1rem;
             padding: 2rem;
           }
 
@@ -95,6 +98,14 @@
     .review-order-footer {
       flex: 1;
       @include flexCenter(column);
+      padding: 3rem 7rem;
     }
   }
+}
+
+
+// UTILITY CLASS FOR TOP LIST ITEM
+
+.top-border {
+  border-top: $red01 solid 0.1rem;
 }

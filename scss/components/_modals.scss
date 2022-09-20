@@ -11,7 +11,7 @@
 .payment-modal-wrapper {
   @include flexCenter(column);
   gap: 5rem;
-  width: 70vw;
+  width: 80vw;
   padding: 7rem 7rem 10rem;
 
   .close-modal {
@@ -155,6 +155,8 @@
 // FOOD ITEM MODAL
 
 .menu-item-modal-wrapper {
+
+    width: 80vw;
   @include gridColumn02(0);
 
   .menu-item-modal-left {
@@ -228,3 +230,8 @@
     }
   }
 }
+
+
+
+// CHANGE LANGUAGE MODAL
+

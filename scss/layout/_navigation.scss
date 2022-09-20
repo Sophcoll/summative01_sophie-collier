@@ -6,10 +6,16 @@
 
 .top-nav-small {
   width: 65vw;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .top-nav-large {
   width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 // GENERAL STYLING
@@ -68,7 +74,8 @@
   }
 }
 
-// SMALL DROPDOWN MENU STYLING
+
+// DROP DOWN MENU TO CHANGE LANGUAGE
 
 .small-menu {
   width: 65vw;

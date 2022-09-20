@@ -6,6 +6,7 @@
 .menu-card {
     @include gridColumn02(0);
     outline: $red01 solid 0.2rem;
+
   
     .menu-card-img-wrapper {
       @include flexCenter(column);
@@ -23,6 +24,14 @@
   
       header {
         margin-left: auto;
+        flex: 1;
+
+        img {
+          @media (orientation: portrait) {
+            width: 2.5rem;
+            height: 2.5rem;
+          }
+        }
       }
   
       main {
@@ -36,6 +45,10 @@
             font-weight: 600;
           }
         }
+      }
+
+      footer {
+        flex: 1;
       }
     }
   }

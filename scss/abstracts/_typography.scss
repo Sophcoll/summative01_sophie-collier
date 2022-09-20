@@ -10,36 +10,38 @@
 
 // HEADINGS
 
-h1 {
-    font-size: 6.1rem;
-    line-height: 7.2rem;
-    margin: 0;
-}
 
-h2 {
+h1 {
     font-size: 4.8rem;
     line-height: 5.6rem;
 }
 
-h3 {
+h2 {
     font-size: 3.9rem;
     line-height: 4.8rem;
 }
 
-h4 {
+h3 {
     font-size: 3.1rem;
     line-height: 4rem;
 }
 
-h5 {
+h4 {
     font-size: 2.5rem;
     line-height: 3.2rem;
 }
 
-h6 {
+h5 {
     font-size: 2rem;
     line-height: 2.4rem;
 }
+
+h6 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+
 
 // PARAGRAPH AND SUBTITLES
 
@@ -47,13 +49,15 @@ h6 {
 p,
 a,
 span {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
 }
 
 a {
     color: $white;
     text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
 }
 
 figcaption {
@@ -66,26 +70,26 @@ figcaption {
 }
 
 .regular-subtitle01 {
-    font-size: 1.4rem;
-    line-height: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
     font-weight: 400;
 }
 
 .semibold-subtitle01 {
-    font-size: 1.4rem;
-    line-height: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
     font-weight: 600;
 }
 
 .regular-subtitle02 {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
     font-weight: 400;
 }
 
 .semibold-subtitle02 {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
     font-weight: 600;
 }
 
@@ -108,3 +112,91 @@ i {
 .caps {
     text-transform: capitalize;
 }
+
+
+
+
+
+// PREVIOUS TYPE SETTINGS
+
+// HEADINGS
+
+// h1 {
+//     font-size: 6.1rem;
+//     line-height: 7.2rem;
+//     margin: 0;
+// }
+
+// h2 {
+//     font-size: 4.8rem;
+//     line-height: 5.6rem;
+// }
+
+// h3 {
+//     font-size: 3.9rem;
+//     line-height: 4.8rem;
+// }
+
+// h4 {
+//     font-size: 3.1rem;
+//     line-height: 4rem;
+// }
+
+// h5 {
+//     font-size: 2.5rem;
+//     line-height: 3.2rem;
+// }
+
+// h6 {
+//     font-size: 2rem;
+//     line-height: 2.4rem;
+// }
+
+
+// PARAGRAPH
+
+
+// p,
+// a,
+// span {
+//     font-size: 1.6rem;
+//     line-height: 2.4rem;
+// }
+
+// a {
+//     color: $white;
+//     text-transform: uppercase;
+// }
+
+// figcaption {
+//     font-size: 1.44rem;
+//     line-height: 2rem;
+//     text-transform: uppercase;
+//     color: $white;
+//     font-weight: 400;
+//     text-align: center;
+// }
+
+// .regular-subtitle01 {
+//     font-size: 1.4rem;
+//     line-height: 2rem;
+//     font-weight: 400;
+// }
+
+// .semibold-subtitle01 {
+//     font-size: 1.4rem;
+//     line-height: 2rem;
+//     font-weight: 600;
+// }
+
+// .regular-subtitle02 {
+//     font-size: 1.2rem;
+//     line-height: 1.6rem;
+//     font-weight: 400;
+// }
+
+// .semibold-subtitle02 {
+//     font-size: 1.2rem;
+//     line-height: 1.6rem;
+//     font-weight: 600;
+// }

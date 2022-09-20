@@ -5,6 +5,7 @@
 .allergy-footer {
     @include flexCenter(column);
     gap: 2rem;
+    @include regularCenter;
 
     p:first-of-type {
         font-weight: 600;
