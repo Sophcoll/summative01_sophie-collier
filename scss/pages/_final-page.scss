@@ -6,7 +6,7 @@
   background-color: $red01;
   background: url("../img/pattern-background.svg") center no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  max-height: 100vh;
   min-width: 100vw;
   position: relative;
   @include flexCenter(column);
@@ -20,12 +20,29 @@
 
 .body-wrapper {
   main {
-    width: 65vw;
+    width: 75vw;
+
+    @media (orientation: landscape) and (max-width: $iPad-landscape) {
+      width: 95vw;
+    }
+
+    @media (orientation: portrait) and (max-width: $iPad-portrait) {
+      width: 95vw;
+      padding-top: 6rem;
+    }
 
     .final-page-title-wrapper {
       figure {
         width: 27rem;
         margin: auto;
+
+        @media (orientation: landscape) and (max-width: $iPad-landscape) {
+          width: 15rem;
+        }
+
+        @media (orientation: portrait) and (max-width: $iPad-portrait) {
+          width: 20rem;
+        }
       }
       h1,
       h3 {
@@ -33,11 +50,30 @@
       }
 
       h1 {
-        padding-bottom: 2rem;
+
+        @media (orientation: landscape) and (max-width: $iPad-landscape) {
+          font-size: 3.1rem;
+          line-height: 4rem;
+        }
+
+        @media (orientation: portrait) and (max-width: $iPad-portrait) {
+          font-size: 3.9rem;
+          line-height: 4.8rem;
+        }
       }
 
       h3 {
         padding-bottom: 4rem;
+
+        @media (orientation: landscape) and (max-width: $iPad-landscape) {
+          font-size: 2.5rem;
+          line-height: 3.2rem;
+        }
+
+        @media (orientation: portrait) and (max-width: $iPad-portrait) {
+          font-size: 2.5rem;
+          line-height: 3.2rem;
+        }
       }
     }
 
@@ -45,50 +81,72 @@
       border-top: solid white 0.2rem;
       border-bottom: solid white 0.2rem;
       padding: 3rem 0;
-      // margin-bottom: 4rem;
+      margin-bottom: 4rem;
+
+      @media (orientation: landscape) and (max-width: $iPad-landscape) {
+        margin-bottom: 3rem;
+      }
 
       h5 {
         @include semiBoldCenter;
         padding-bottom: 4rem;
+
+
+        @media (orientation: landscape) and (max-width: $iPad-landscape) {
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+        }
       }
 
       p {
         @include regularCenter;
         font-size: 2rem;
         line-height: 3rem;
+
+        @media (orientation: landscape) and (max-width: $iPad-landscape) {
+          font-size: 1.4rem;
+          line-height: 2rem;
+        }
+
+        @media (orientation: portrait) and (max-width: $iPad-portrait) {
+          font-size: 1.4rem;
+          line-height: 2rem;
+        }
       }
     }
-  }
-
-}
-
-.final-page-footer {
-    @include flexCenter(column);
-    gap: 3rem;
-    background-color: pink;
-
-
-    textarea {
-        width: 100%;
+    .final-page-footer {
+      @include flexCenter(column);
+      gap: 3rem;
+      width: 100%;
+    
+      textarea {
         height: 16rem;
         border: none;
-        margin: 0;
+        width: 100%;
+        margin-bottom: 4rem;
 
+        @media (orientation: landscape) and (max-width: $iPad-landscape) {
+          height: 12rem;
+          margin-bottom: 1.6rem;
+        }
+    
         &::placeholder {
-            font-size: 1.6rem;
-            font-weight: 200;
-            line-height: 2.4rem;
-            padding: 3rem;
-    }
-}
-
-
-
-    .get-started-btn {
-      @include flexCenter(column);
-
-      a {
-        margin: auto;
+          font-size: 1.6rem;
+          font-weight: 200;
+          line-height: 2.4rem;
+          padding: 3rem;
+        }
+      }
+    
+      .get-started-btn {
+        @include flexCenter(column);
+    
+        a {
+          margin: auto;
+        }
       }
     }
+    
+  }
 }
+
