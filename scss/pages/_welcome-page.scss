@@ -20,55 +20,74 @@
 
 .body-wrapper {
   main {
-    width: 50vw;
+    height: 100vh;
     margin: auto;
+    padding: 7rem;
+    @include flexCenter(column);
+    // background-color: aqua;
 
-    .welcome-title-wrapper {
+    .welcome-big-wrapper {
 
-      figure {
-        width: 27rem;
-        margin: auto;
-        padding-bottom: 3rem;
+      .welcome-title-wrapper {
+        figure {
+          width: 27rem;
+          margin: auto;
+        }
+        h1,
+        h3 {
+          @include regularCenter;
+        }
+
+        h1 {
+          padding-bottom: 2rem;
+        }
+
+        h3 {
+          padding-bottom: 4rem;
+        }
+
+
+        @media (max-width: $iPad-landscape) {
+          figure {
+            width: 20rem;
+          }
+
+          h1 {
+            font-size: 3.9rem;
+            line-height: 4.8rem;
+            padding-bottom: 1rem;
+          }
+        }
+
+
+
+
       }
-      h1,
-      h3 {
-        @include regularCenter;
+
+      .welcome-body-wrapper {
+        border-top: solid white 0.2rem;
+        border-bottom: solid white 0.2rem;
+        padding: 4rem 0;
+        margin-bottom: 4rem;
+
+        h5 {
+          @include semiBoldCenter;
+          padding-bottom: 4rem;
+        }
+
+        p {
+          @include regularCenter;
+          font-size: 2rem;
+          line-height: 3rem;
+        }
       }
 
-      h1 {
-        padding-bottom: 3.6rem;
-      }
+      .get-started-btn {
+        @include flexCenter(column);
 
-      h3 {
-        padding-bottom: 4rem;
-      }
-
-
-    }
-
-    .welcome-body-wrapper {
-      border-top: solid white 0.2rem;
-      border-bottom: solid white 0.2rem;
-      padding: 3rem 0;
-      margin-bottom: 4rem;
-
-      h5 {
-        @include semiBoldCenter;
-        padding-bottom: 4rem;
-      }
-
-      p {
-        @include regularCenter;
-        font-size: 2rem;
-        line-height: 3rem;
-      }
-    }
-
-    .get-started-btn {
-      @include flexCenter(column);
-
-      a {
-        margin: auto;
+        a {
+          margin: auto;
+        }
       }
     }
   }

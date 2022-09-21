@@ -25,3 +25,16 @@ $white: #FDFDFD;
 .white-outline {
     outline: 0.2rem solid $white;
 }
+
+
+// BREAKPOINTS WIDTHS FOR MEDIA QUERIES
+
+// REGULAR IPAD
+
+$iPad-landscape: 1024px;
+$iPad-portrait: 768px;
+
+// IPAD PRO
+
+$iPadPro-landscape: 1336px;
+$iPadPro-portrait: 1024px;
