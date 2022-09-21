@@ -11,13 +11,13 @@
   .yakitori-intro {
     @include flexCenter(column);
     gap: 5rem;
-    padding: 15rem 5rem 7rem 7rem;
+    padding: 15rem 7rem 7rem 7rem;
     border-bottom: $red01 solid 0.1rem;
 
-
-  @media (orientation: portrait) {
-    padding: 18rem 5rem 7rem 5rem;
-  }
+    @media (orientation: portrait) and (min-width: $iPadPro-portrait) {
+      padding-top: 20rem;
+    }
+    
 
     .yakitori-intro-header {
       h3 {
@@ -45,9 +45,9 @@
       gap: 2rem;
 
       .yakitori-menu-list {
-        width: 100%;
         flex: 1;
         @include flexCenter(row);
+        flex-wrap: wrap;
         gap: 3rem;
       }
     }
@@ -58,18 +58,18 @@
 
 .yakitori-wrapper {
   width: 65vw;
-  padding: 7rem 5rem 7rem 7rem;
+  padding: 7rem;
   border-bottom: $red01 solid 0.1rem;
 
-  @media (orientation: portrait) {
-    padding: 7rem;
-  }
+  // @media (orientation: portrait) {
+  //   padding: 7rem;
+  // }
 
 
   .yakitori-section {
     @include flexCenter(column);
     gap: 5rem;
-    
+
     .yakitori-header {
       @include flexCenter(column);
 
@@ -80,7 +80,11 @@
     .yakitori-body {
       @include gridColumn02(4rem);
 
-      @media (orientation: portrait) {
+      @media (orientation: portrait) and (max-width: $iPadPro-portrait) {
+        @include gridColumn01(4rem);
+      }
+
+      @media (orientation: landscape) and (max-width: $iPad-landscape) {
         @include gridColumn01(4rem);
       }
     }

@@ -8,6 +8,21 @@
   padding: 10rem 5rem 5rem 7rem;
   @include flexCenter(column);
 
+  @media (orientation: portrait) and (max-width: $iPadPro-portrait) {
+    height: 130vh;
+    padding: 15rem 5rem 5rem;
+  }
+
+  @media (orientation: portrait) and (max-width: $iPad-portrait) {
+    height: 145vh;
+    padding: 15rem 5rem 5rem;
+  }
+
+  @media (orientation: landscape) and (max-width: $iPad-landscape) {
+    height: 220vh;
+    padding: 8rem 5rem 5rem;
+  }
+
   .main-menu {
     flex: 1;
     @include flexCenter(column);
@@ -28,6 +43,14 @@
       .main-menu-list {
         @include gridColumn04(3rem);
 
+        @media (orientation: portrait) {
+          @include gridColumn02(3rem);
+        }
+
+        @media (width: $iPad-landscape) {
+          @include gridColumn02(3rem);
+        }
+
         .main-menu-list-item {
           @include flexCenter(column);
           outline: $red01 solid 0.2rem;
@@ -45,10 +68,18 @@
               @include flexCenter(column);
               height: 9rem;
               padding-bottom: 2rem;
+
+              @media (orientation: portrait) {
+                height: 15rem;
+              }
+              @media (width: $iPad-landscape) {
+                min-height: 18rem;
+              }
             }
 
             h6 {
               color: $black;
+              @include semiBoldCenter;
             }
           }
         }
@@ -58,6 +89,10 @@
     .main-menu-footer {
       @include flexCenter(column);
       flex: 1;
+
+      @media (orientation: portrait) {
+        padding-top: 3rem;
+      }
     }
   }
 }

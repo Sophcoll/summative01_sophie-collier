@@ -66,7 +66,7 @@
       flex: 1;
       padding: 2rem;
       border-bottom: $red01 solid 0.1rem;
-      @include gridColumn05(0);
+      @include gridColumn05(1rem);
 
       p,
       i {
@@ -77,11 +77,20 @@
       p:first-of-type::before {
         content: url("../img/minus-icon.svg");
         padding-right: 1rem;
+
+        @media (max-width: $iPad-portrait) {
+          display: none;
+         }
       }
 
       p:first-of-type::after {
         content: url("../img/plus-icon.svg");
         padding-left: 1rem;
+
+
+        @media (max-width: $iPad-portrait) {
+          display: none;
+         }
       }
 
       p:nth-of-type(2) {

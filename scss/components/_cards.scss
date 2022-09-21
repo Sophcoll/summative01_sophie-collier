@@ -31,6 +31,11 @@
             width: 2.5rem;
             height: 2.5rem;
           }
+
+          @media (orientation: landscape) and (max-width: $iPad-landscape) {
+            width: 2rem;
+            height: 2rem;
+          }
         }
       }
   
