@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/resets.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Homepage</title>
@@ -17,18 +17,18 @@
 
 
 
-        <!-- TITLE & CHANGE LANGUAGE BUTTON -->
+    <!-- TITLE & CHANGE LANGUAGE BUTTON -->
 
-        <header>
-            <div class="language-btn-wrapper">
-                <nav>
-                    <a class="red-white-btn04" href="#">change language
-                    </a>
-                </nav>
-            </div>
-        </header>
+    <header>
+        <div class="language-btn-wrapper">
+            <nav>
+                <a class="red-white-btn04" href="#">change language
+                </a>
+            </nav>
+        </div>
+    </header>
 
-        <div class="body-wrapper">
+    <div class="body-wrapper">
         <main>
             <div class="welcome-big-wrapper">
 
@@ -47,17 +47,30 @@
 
 
                 <div class="welcome-body-wrapper">
-                    <h5 class="upper-case white">table 3</h5>
+                    <h5 class="upper-case white">Welcome!</h5>
                     <p class="white">Our self-ordering service gives you the freedom to order and pay at your leisure.
                         If
                         you require any
                         assistance, our friendly team are happy to help.</p>
-                </div>
-
-                <div class="get-started-btn">
-                    <a class="red-white-btn02 white-outline" href="./main-menu.html">get started</a>
+                    <div class="form-wrapper">
+                        <div class="input-wrapper">
+                            <input id="tableNumber" class="table-number" name="table-number" type="number" maxlength="10"
+                                placeholder="Table Number" required>
+                                <img src="./img/info-small-outline.svg" alt="information icon">
+                        </div>
+                        <div class="input-wrapper">
+                            <input id="tableName" class="table-name" name="table-name" type="text" placeholder="Name for table" required>
+                            <img src="./img/help-small-outline.svg" alt="outline of a person">
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <div class="get-started-btn">
+                <a class="red-white-btn02 white-outline" href="./main-menu.html">get started</a>
+            </div>
+
+
         </main>
 
     </div>

@@ -54,7 +54,7 @@
 
                 <header class="order-confirmation-header">
                     <p class="upper-case">table 3</p>
-                    <h3>Order confirmed!</h3>
+                    <h2>Order confirmed!</h2>
                 </header>
 
                 <main class="order-confirmation-body">
@@ -141,20 +141,20 @@
                         <div class="payment-modal-footer-right-form">
                             <form action="">
                                 <div class="input-wrapper col-span-3">
-                                    <input id="cardNumber" name="card-number" type="number" placeholder="Card number">
+                                    <input id="cardNumber" name="card-number" type="number" placeholder="Card number" maxlength="15" required>
                                     <img src="./img/creditcard-small-outline.svg" alt="outline of a credit card">
                                 </div>
                                 <div class="input-wrapper col-span-3">
-                                    <input id="cardName" name="card-name" type="text" placeholder="Cardholder name">
+                                    <input id="cardName" name="card-name" type="text" placeholder="Cardholder name" required>
                                     <img src="./img/help-small-outline.svg" alt="outline of a person">
                                 </div>
                                 <div class="input-wrapper col-span-2">
                                     <input id="cardExpiryDate" name="card-expiry-date" type="number"
-                                        placeholder="Expiry date">
+                                        placeholder="Expiry date" required>
                                     <img src="./img/calendar-small-outline.svg" alt="outline of a calendar">
                                 </div>
                                 <div class="input-wrapper col-span-1">
-                                    <input id="cardCvv" name="card-cvv" type="number" placeholder="CVV">
+                                    <input id="cardCvv" name="card-cvv" type="number" placeholder="CVV" required>
                                     <img src="./img/info-small-outline.svg" alt="information icon">
                                 </div>
                                 <div class="checkbox-wrapper col-span-2">

@@ -4,8 +4,9 @@
 // PAYMENT MODAL
 
 .payment-modal {
-    outline: $red01 solid 0.3rem;
+    outline: $red01 solid 0.1rem;
     background-color: $white;
+    position: relative;
 }
 
 .payment-modal-wrapper {
@@ -14,16 +15,24 @@
   width: 80vw;
   padding: 7rem 7rem 10rem;
 
+  @media (orientation: portrait) and (max-width: $iPad-portrait) {
+    width: 100vw;
+  }
+
   .close-modal {
-    margin-left: auto;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
   }
 
   .payment-modal-header {
     flex: 1;
-    @include flexCenter(column);
+    @include flex(flex-start, column);
+    width: 100%;
 
     h5 {
-      @include semiBoldCenter;
+    text-align: left;
+    align-self: start;
     }
   }
 
@@ -158,6 +167,21 @@
 
     width: 80vw;
   @include gridColumn02(0);
+  border: none;
+
+  @media (orientation: portrait) and (min-width: $iPadPro-portrait) {
+    width: 90vw;
+  }
+
+  @media (orientation: landscape) and (max-width: $iPad-landscape) {
+    width: 90vw;
+  }
+
+  @media (orientation: portrait) and (max-width: $iPad-portrait) {
+    @include gridColumn01(0);
+    grid-auto-rows: 50rem;
+    height: 90vh;
+  }
 
   .menu-item-modal-left {
     @include flexCenter(column);
@@ -172,6 +196,18 @@
     @include flexCenter(column);
     padding: 9rem 5rem 5rem;
     position: relative;
+
+    @media (orientation: portrait) and (min-width: $iPadPro-portrait) {
+      padding: 5rem 4rem 4rem;
+    }
+
+    @media (orientation: landscape) and (max-width: $iPad-landscape) {
+      padding: 5rem 4rem 4rem;
+    }
+
+    @media (orientation: portrait) and (max-width: $iPad-portrait)  {
+      padding: 5rem 4rem;
+    }
 
 
     button {
@@ -197,6 +233,9 @@
         h3 {
           @include regularCenter;
         }
+        @media (orientation: portrait) and (min-width: $iPadPro-portrait) {
+          padding-bottom: 4rem;
+        }
       }
       .menu-item-modal-body {
         @include flexCenter(column);
@@ -211,6 +250,10 @@
         p {
           @include semiBoldCenter;
         }
+
+        @media (orientation: portrait) and (min-width: $iPadPro-portrait) {
+          padding-bottom: 4rem;
+        }
       }
 
       .menu-item-modal-footer {
@@ -218,13 +261,45 @@
         flex: 1;
         @include flex(space-evenly, row);
 
+        @media (orientation: portrait) and (max-width: $iPad-portrait) {
+          @include flex(space-between, row)
+        }
+
         figure {
           @include flexCenter(column);
           gap: 1rem;
 
+          @media (orientation: portrait) and (min-width: $iPadPro-portrait) {
+            width: 10rem;
+
+            figcaption {
+              font-size: 1.1rem;
+            }
+          }
+
+          @media (orientation: landscape) and (max-width: $iPad-landscape){
+            width: 10rem;
+
+            figcaption {
+              font-size: 1.1rem;
+            }
+          }
+
           figcaption {
             color: $black;
           }
+        }
+
+        a {
+          @media (orientation: portrait) and (min-width: $iPadPro-portrait) {
+            @include btn-size02;
+          }
+
+          @media (orientation: landscape) and (max-width: $iPad-landscape) {
+            @include btn-size02
+          }
+
+          
         }
       }
     }

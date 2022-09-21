@@ -3,12 +3,10 @@
 @use "../components/" as *;
 
 .review-order-wrapper {
-
   .review-order {
     height: 100vh;
     @include flexCenter(column);
     padding: 15rem 7rem 5rem;
-
 
     .review-order-header {
       @include flexCenter(column);
@@ -17,6 +15,15 @@
 
       h3 {
         @include regularCenter;
+
+        @media (orientation: portrait) and (min-width: $iPadPro-portrait) {
+          font-size: 3.9rem;
+          line-height: 4.8rem;
+        }
+
+        @media (orientation: landscape) and (max-width: $iPad-landscape) {
+          display: none;
+        }
       }
     }
 
@@ -24,6 +31,10 @@
       width: 80vw;
       @include flexCenter(column);
       flex: 1;
+      
+      @media (orientation: portrait) and (max-width: $iPad-portrait) {
+        width: 100vw;
+      }
 
       .order-summary-wrapper {
         @include gridColumn02(0);
@@ -75,7 +86,7 @@
                 width: 100%;
                 height: 15rem;
                 border: $grey04 solid 0.1rem;
-  
+
                 &::placeholder {
                   font-size: 1.6rem;
                   font-weight: 200;
@@ -83,7 +94,6 @@
                   padding: 2rem;
                 }
               }
-
             }
 
             .order-summary-btn-wrapper {
@@ -92,7 +102,6 @@
 
               .order-more-btn,
               .place-order-btn {
-
                 @media (orientation: portrait) and (max-width: $iPadPro-portrait) {
                   @include btn-size05;
                 }
@@ -107,10 +116,20 @@
       flex: 1;
       @include flexCenter(column);
       padding: 3rem 7rem;
+
+      @media (orientation: landscape) and (max-width: $iPad-landscape) {
+        padding: 5rem 7rem;
+      }
+
+      p {
+        @media (orientation: landscape) and (max-width: $iPad-landscape) {
+          font-size: 1.2rem;
+          line-height: 1.6rem;
+        }
+      }
     }
   }
 }
-
 
 // UTILITY CLASS FOR TOP LIST ITEM
 

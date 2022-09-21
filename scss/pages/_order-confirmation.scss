@@ -16,8 +16,21 @@
       gap: 1rem;
       flex: 1;
 
-      h3 {
+      p {
+        @media (orientation: portrait) and (min-width: $iPadPro-portrait) {
+          font-size: 2rem;
+          line-height: 2.4rem;
+          padding-bottom: 2rem;
+        }
+      }
+
+      h2 {
         @include regularCenter;
+
+        @media (orientation: portrait) and (min-width: $iPadPro-portrait) {
+          font-size: 4.8rem;
+          line-height: 5.6rem;
+        }
       }
 
       p {
@@ -29,19 +42,48 @@
       width: 90vw;
       gap: 7.5rem;
       @include flexCenter(column);
-      flex: 1;
+
+      @media (orientation: portrait) and (min-width: $iPadPro-portrait) {
+        width: 60vw;
+      }
+    
+      figure {
+        @media (orientation: landscape) and (max-width: $iPad-landscape) {
+          width: 70vw;
+          padding-bottom: 3rem;
+        }
+
+      }
 
       .order-confirmation-text {
         @include flexCenter(column);
         flex: 1;
         gap: 2rem;
+        
+        @media (orientation: portrait) and (min-width: $iPadPro-portrait) {
+          gap: 5rem;
+          padding-bottom: 5rem;
+        }
+
+        @media (orientation: landscape) and (max-width: $iPad-landscape) {
+          width: 70vw;
+        }
 
         p {
           @include regularCenter;
+
+          @media (orientation: portrait) and (min-width: $iPadPro-portrait) {
+            font-size: 2rem;
+            line-height: 2.4rem;
+          }
         }
 
         span {
           font-weight: 600;
+          @media (orientation: portrait) and (min-width: $iPadPro-portrait) {
+            font-size: 2rem;
+            line-height: 2.4rem;
+          }
         }
       }
     }
