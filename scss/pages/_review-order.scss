@@ -21,7 +21,7 @@
     }
 
     .review-order-body {
-      width: 75vw;
+      width: 80vw;
       @include flexCenter(column);
       flex: 1;
 
@@ -89,6 +89,14 @@
             .order-summary-btn-wrapper {
               width: 100%;
               @include flex(space-between, row);
+
+              .order-more-btn,
+              .place-order-btn {
+
+                @media (orientation: portrait) and (max-width: $iPadPro-portrait) {
+                  @include btn-size05;
+                }
+              }
             }
           }
         }
