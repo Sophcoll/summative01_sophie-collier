@@ -31,7 +31,9 @@ h4 {
     line-height: 3.2rem;
 }
 
-h5 {
+h5,
+textarea, 
+input {
     font-size: 2rem;
     line-height: 2.4rem;
 }
@@ -39,6 +41,11 @@ h5 {
 h6 {
     font-size: 1.6rem;
     line-height: 2.4rem;
+}
+
+textarea,
+input {
+    padding-left: 2rem;
 }
 
 
